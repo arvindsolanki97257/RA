@@ -1,0 +1,431 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1791cf;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 bg-white px-10 py-3 sticky top-0 z-20">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-gray-900">
+<div class="size-8 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 text-xl font-bold leading-tight">HomeFinder</h2>
+</div>
+<div class="flex items-center gap-8">
+<a class="text-gray-700 hover:text-gray-900 text-base font-medium leading-normal" href="#">Buy</a>
+<a class="text-gray-700 hover:text-gray-900 text-base font-medium leading-normal" href="#">Rent</a>
+<a class="text-gray-700 hover:text-gray-900 text-base font-medium leading-normal" href="#">Sell</a>
+<a class="text-gray-700 hover:text-gray-900 text-base font-medium leading-normal" href="#">Mortgage</a>
+<a class="text-gray-700 hover:text-gray-900 text-base font-medium leading-normal" href="#">Find Agent</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-md h-full">
+<div class="text-gray-500 flex border-none bg-gray-100 items-center justify-center pl-3 rounded-l-md border-r-0">
+<span class="material-symbols-outlined !text-2xl">
+                    search
+                    </span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-gray-900 focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-gray-100 focus:border-none h-full placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-base font-semibold leading-normal tracking-wide shadow-sm hover:bg-[var(--primary-color)]/90">
+<span class="truncate">Sign in</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-40 py-10">
+<div class="layout-content-container mx-auto flex max-w-[1280px] flex-col">
+<div class="flex items-center justify-between pb-6">
+<div>
+<div class="flex items-center gap-2 text-sm text-gray-500">
+<a class="hover:text-[var(--primary-color)]" href="#">Homes</a>
+<span>/</span>
+<a class="hover:text-[var(--primary-color)]" href="#">California</a>
+<span>/</span>
+<a class="hover:text-[var(--primary-color)]" href="#">Anytown</a>
+<span>/</span>
+<span class="text-gray-700 font-medium">123 Maple Street</span>
+</div>
+<h1 class="text-gray-900 text-4xl font-bold leading-tight pt-2">123 Maple Street, Anytown, CA 91234</h1>
+<p class="text-gray-700 text-lg font-normal leading-normal pt-2">4 beds · 3 baths · 2,500 sqft</p>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 hover:bg-gray-100">
+<span class="material-symbols-outlined !text-xl">favorite_border</span>
+<span>Save</span>
+</button>
+<button class="flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 hover:bg-gray-100">
+<span class="material-symbols-outlined !text-xl">share</span>
+<span>Share</span>
+</button>
+<button class="flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-700 hover:bg-gray-100">
+<span class="material-symbols-outlined !text-xl">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 h-[500px] overflow-hidden rounded-lg">
+<div class="col-span-2 row-span-2 cursor-pointer group overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBc62JVOcktp0JgZlKNNCHQgxZTuwhyWRJXqYGYpVKD-8fmaKro02mSrE8oEaqeplwpSb6IqlRLimQF-n7jzeEGtBl4zwf5UXOLESnRoqwu2ZOqZSangdJRkHZ7p5QdhxjrmR_T_RoEJUgLQkxbeeQxUSozMU1ePkUEfm6POy23kKpcu6I52JMxbE4OLJxeBlq7wOLlZFB62zxuApdqrC2AuGqqoOaAM5q4n99jCvNWARW-Qb_lzOT3-7F4SmXmnLgF5Y-soZOhGXs");'></div>
+</div>
+<div class="cursor-pointer group overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvupwSulgnDzu-LwTDzD2z-ifjlA2mwGqvgFHUuH4VqBI8ny3XEsHGR2lOJuq_Nkau7lbzc0On4kWp-YgUhGNTkiillrfY9K-VYl5mVkdPdX0xGAxX9iYMfK8zjlt7MjI1eE_bVFCHoIIBZK9Zi1l2MO94vXmSocSofGEiqs_z0bSNK6TEqZxnDGbVGae4ryyyIvJN0vUYmn-lbVMRIWwemLBQOUbwZBtf-W_9iK6Ag-eneghSxg2uzauEJvNDGXKbU2UrU5vZuMM");'></div>
+</div>
+<div class="relative cursor-pointer group overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8-jpgZniKS31lQt9oiaPiReHaznYbmRod8ewPg-kYZUTpyJKif-AjEYL18R0NexhFmXK3Ds7CHJ1-aNa4dwtb-9bdQaJPbf77o1vaZJQ-TCA4bN4FNRWkpzvR-egGW9QUelSPYWQ0lp_FK9OMqjwPdFB7MALz48RG46kmVSOaNjLWh5iJVficDKX_NPuSkRtFZWY2TfhyPKkGz2ZOy3UmQk5zpexwegCGLa0B1rYKsgpLBfV3B3-4H7uQQ4KrXz5eQolxBBbUHUg");'></div>
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-lg font-semibold">
+                         +25 Photos
+                     </div>
+</div>
+<div class="cursor-pointer group overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3rBmbawdT_ef_qGzGHOpRPbW21vRZFY64QG79CD8Po2Pp0dnXpr8_vhNIr9C0DzE1tMO0e2V5r60vJKQZjUXX30Gg_WrZubdcPh4BIy1sJbAFVkOW4vNVegWug8Yu7lq7KXaHhMpAnVJFBMwyBNCTqyqHDhlb6cpHDmRfJXjq0xw_Bllq505qWlxuxr7af3dPyYzc8toj_owt51eAFCNTMBne6L8U-lg70KJxWQWYxPlXODVUKYNSy5yYj4RFfztIonYmatejs9A");'></div>
+</div>
+<div class="relative cursor-pointer group overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARO4ibLOFfNUgBTT6qbBTy-qbNMWOrayavXLyXXm0a2gI-GsXK77eb4uuhaPHcG_-0TU7D2eotHS35MkA9YFkXprcEg9pxJ4c_JHrFFqjpRKogSSSrrmVvpVY7e3DaLYfa_NDlC0Zft0X_tZPH76llHytqk2sL8arI4jKtysNn1HmBaLeH9LG3vN6G8wW_0zGZWupTh7aHaEbUW7PYtqyKm0b3KlVh14amL_stzXjMYwmeE6y38zQJ_dduNIlHx6qJTbRMzbOPDwM");'></div>
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-lg font-semibold gap-2">
+<span class="material-symbols-outlined">videocam</span>
+<span>Virtual Tour</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-16 mt-12">
+<div class="col-span-2">
+<section>
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Overview</h2>
+<p class="text-gray-700 text-base leading-relaxed mt-4">
+                        Welcome to this stunning 4-bedroom, 3-bathroom home located in the heart of Anytown. This property boasts 2,500 sqft of living space, perfect for families or those
+                        who love to entertain. The home features a modern kitchen, spacious living areas, and a beautifully landscaped backyard. Enjoy the convenience of being close to
+                        top-rated schools, shopping, and dining.
+                      </p>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Property Details</h2>
+<div class="mt-4 grid grid-cols-2 gap-x-8 gap-y-6">
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Property Type</p>
+<p class="text-gray-800 text-base font-medium">Single Family Home</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Year Built</p>
+<p class="text-gray-800 text-base font-medium">2015</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Lot Size</p>
+<p class="text-gray-800 text-base font-medium">0.25 acres</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Bedrooms</p>
+<p class="text-gray-800 text-base font-medium">4</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Bathrooms</p>
+<p class="text-gray-800 text-base font-medium">3</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Living Area</p>
+<p class="text-gray-800 text-base font-medium">2,500 sqft</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Parking</p>
+<p class="text-gray-800 text-base font-medium">2-Car Garage</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Heating</p>
+<p class="text-gray-800 text-base font-medium">Central Heating</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">Cooling</p>
+<p class="text-gray-800 text-base font-medium">Central AC</p>
+</div>
+<div class="flex flex-col gap-1 py-4 border-b border-gray-200">
+<p class="text-gray-500 text-sm">HOA Fees</p>
+<p class="text-gray-800 text-base font-medium">$100/month</p>
+</div>
+</div>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Property History</h2>
+<div class="mt-8 flow-root">
+<div class="-my-8">
+<div class="relative pl-12 py-8">
+<div class="absolute left-0 top-0 h-full w-px bg-gray-200"></div>
+<div class="absolute left-0 top-8 -ml-1.5 h-3 w-3 rounded-full bg-[var(--primary-color)]"></div>
+<p class="text-sm font-medium text-gray-500">Mar 10, 2024</p>
+<h3 class="mt-1 text-lg font-semibold text-gray-900">Listed for Sale</h3>
+<p class="mt-2 text-base text-gray-700">Price: <span class="font-bold">$780,000</span></p>
+<p class="text-sm text-gray-500">Source: Current Listing</p>
+</div>
+<div class="relative pl-12 py-8">
+<div class="absolute left-0 top-0 h-full w-px bg-gray-200"></div>
+<div class="absolute left-0 top-8 -ml-1.5 h-3 w-3 rounded-full bg-gray-400"></div>
+<p class="text-sm font-medium text-gray-500">Jun 15, 2022</p>
+<h3 class="mt-1 text-lg font-semibold text-gray-900">Kitchen Renovation</h3>
+<p class="mt-2 text-base text-gray-700">Permit filed for a full kitchen remodel. Includes new cabinets, countertops, and appliances.</p>
+</div>
+<div class="relative pl-12 py-8">
+<div class="absolute left-0 top-0 h-full w-px bg-gray-200"></div>
+<div class="absolute left-0 top-8 -ml-1.5 h-3 w-3 rounded-full bg-gray-400"></div>
+<p class="text-sm font-medium text-gray-500">Mar 10, 2020</p>
+<h3 class="mt-1 text-lg font-semibold text-gray-900">Sold</h3>
+<p class="mt-2 text-base text-gray-700">Sale Price: <span class="font-bold">$720,000</span></p>
+<p class="text-sm text-gray-500">Source: Public Records</p>
+</div>
+<div class="relative pl-12 py-8">
+<div class="absolute left-0 top-0 h-full w-px bg-gray-200"></div>
+<div class="absolute left-0 top-8 -ml-1.5 h-3 w-3 rounded-full bg-gray-400"></div>
+<p class="text-sm font-medium text-gray-500">Jan 15, 2020</p>
+<h3 class="mt-1 text-lg font-semibold text-gray-900">Listed for Sale</h3>
+<p class="mt-2 text-base text-gray-700">Price: <span class="font-bold">$750,000</span></p>
+<p class="text-sm text-gray-500">Source: Brokerage A</p>
+</div>
+<div class="relative pl-12 py-8">
+<div class="absolute left-0 top-0 h-full w-px bg-gray-200"></div>
+<div class="absolute left-0 top-8 -ml-1.5 h-3 w-3 rounded-full bg-gray-400"></div>
+<p class="text-sm font-medium text-gray-500">Sep 05, 2015</p>
+<h3 class="mt-1 text-lg font-semibold text-gray-900">Sold (New Construction)</h3>
+<p class="mt-2 text-base text-gray-700">Sale Price: <span class="font-bold">$650,000</span></p>
+<p class="text-sm text-gray-500">Source: Builder</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Tax History</h2>
+<div class="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white">
+<table class="w-full">
+<thead class="bg-gray-50">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Year</th>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Tax Amount</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2021</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">$5,000</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2022</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">$5,200</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2023</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">$5,400</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<div class="col-span-1">
+<div class="sticky top-28">
+<div class="rounded-lg border border-gray-200 bg-white p-6 shadow-md">
+<p class="text-3xl font-bold text-gray-900">$720,000</p>
+<p class="text-base text-gray-600 mt-1">Est. payment: $4,521/mo</p>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<button class="w-full rounded-md bg-[var(--primary-color)] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[var(--primary-color)]/90">Request a tour</button>
+<button class="w-full rounded-md border border-gray-300 bg-white px-4 py-3 text-base font-semibold text-gray-800 shadow-sm hover:bg-gray-50">Contact Agent</button>
+</div>
+</div>
+<div class="mt-8 rounded-lg border border-gray-200 bg-white p-6">
+<h3 class="text-xl font-bold text-gray-900">Mortgage Calculator</h3>
+<div class="mt-4 space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="home-price">Home Price</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm" id="home-price" type="text" value="$720,000"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="down-payment">Down Payment</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm" id="down-payment" placeholder="$144,000" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="loan-term">Loan Term (years)</label>
+<select class="form-select mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm" id="loan-term">
+<option>30</option>
+<option>20</option>
+<option>15</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="interest-rate">Interest Rate</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm" id="interest-rate" placeholder="6.5%" type="text"/>
+</div>
+</div>
+<p class="mt-4 text-sm text-gray-600">Estimated Monthly Payment: <span class="font-bold text-gray-800">$3,648</span> (Principal &amp; Interest)</p>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-12">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Neighborhood</h2>
+<div class="mt-4">
+<div class="w-full h-96 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKAmFjndnKR4SMFf5Evyy5-FDZPMcavFin22nBs9qPETi7JUSKOg4R7t-5yVq56O6C5ki5UjsVNuf_f2TORmD4ZGqK3s_-xCMXNI706qAWD2Lp-69YRUpc2myMh3noWIlJCiQJAib2jztox55EqOlbjq9dfpFoqsTiIPNdCdCjlooYSmKYxiV_7yEheIcBaU1fH0ppTkouHiTGhflR0_K_UhFGkWimGrqLNYpWA6QuSUqs1M1ajCwI3wAJwHF4qL0tb1Bri5Gbl0Y");'></div>
+</div>
+<p class="text-gray-700 text-base leading-relaxed mt-4">
+                  Anytown is a vibrant community known for its excellent schools, parks, and local amenities. Residents enjoy a variety of dining and shopping options, as well as easy
+                  access to major highways and public transportation.
+                </p>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Neighborhood Demographics</h2>
+<div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-3">groups</span>
+<p class="text-lg font-semibold text-gray-800">Population Density</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">3,500</p>
+<p class="text-sm text-gray-500">per square mile</p>
+</div>
+<div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-3">elderly</span>
+<p class="text-lg font-semibold text-gray-800">Median Age</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">38</p>
+<p class="text-sm text-gray-500">years</p>
+</div>
+<div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-3">attach_money</span>
+<p class="text-lg font-semibold text-gray-800">Median Income</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">$85,000</p>
+<p class="text-sm text-gray-500">per household</p>
+</div>
+<div class="bg-white p-6 rounded-lg border border-gray-200 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-3">school</span>
+<p class="text-lg font-semibold text-gray-800">Bachelor's Degree</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">45%</p>
+<p class="text-sm text-gray-500">or higher</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-6 rounded-lg border border-gray-200">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Income Distribution</h3>
+<canvas id="incomeChart"></canvas>
+</div>
+<div class="bg-white p-6 rounded-lg border border-gray-200">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Educational Attainment</h3>
+<canvas id="educationChart"></canvas>
+</div>
+</div>
+</section>
+<section class="mt-10">
+<h2 class="text-gray-900 text-2xl font-bold leading-tight">Nearby Schools</h2>
+<div class="mt-4 overflow-hidden rounded-lg border border-gray-200 bg-white">
+<table class="w-full">
+<thead class="bg-gray-50">
+<tr>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">School Name</th>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Grade Level</th>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Rating</th>
+<th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Distance</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-200">
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Maple Elementary</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">K-5</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">9/10</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">0.5 miles</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Oak Middle School</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">6-8</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">8/10</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">1.2 miles</td>
+</tr>
+<tr>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Willow High School</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">9-12</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">7/10</td>
+<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">2.5 miles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const incomeCtx = document.getElementById('incomeChart').getContext('2d');
+      new Chart(incomeCtx, {
+        type: 'bar',
+        data: {
+          labels: ['< $50k', '$50k-$100k', '$100k-$150k', '$150k-$200k', '> $200k'],
+          datasets: [{
+            label: 'Household Income',
+            data: [15, 40, 25, 15, 5],
+            backgroundColor: 'rgba(23, 145, 207, 0.6)',
+            borderColor: 'rgba(23, 145, 207, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                  callback: function(value) {
+                      return value + '%'
+                  }
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+      const educationCtx = document.getElementById('educationChart').getContext('2d');
+      new Chart(educationCtx, {
+        type: 'doughnut',
+        data: {
+          labels: ['High School', 'Some College', "Bachelor's Degree", 'Graduate Degree'],
+          datasets: [{
+            data: [25, 30, 35, 10],
+            backgroundColor: [
+              'rgba(23, 145, 207, 0.4)',
+              'rgba(23, 145, 207, 0.6)',
+              'rgba(23, 145, 207, 0.8)',
+              'rgba(23, 145, 207, 1)'
+            ],
+            hoverOffset: 4
+          }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'bottom',
+              }
+            }
+        }
+      });
+    });
+  </script>
+</body></html>

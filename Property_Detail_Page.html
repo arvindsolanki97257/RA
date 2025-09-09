@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-500: #1791cf;
+        --neutral-100: #f0f3f4;
+        --neutral-200: #dce2e5;
+        --neutral-400: #637c88;
+        --neutral-900: #111518;
+      }
+    </style>
+</head>
+<body class="bg-white" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-20 w-full bg-white shadow-sm">
+<div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-xl font-bold text-[var(--neutral-900)]" href="#">
+<svg class="h-6 w-6 text-[var(--primary-500)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<span>HomeFinder</span>
+</a>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-[var(--neutral-900)] hover:text-[var(--primary-500)]" href="#">Buy</a>
+<a class="text-sm font-medium text-[var(--neutral-900)] hover:text-[var(--primary-500)]" href="#">Rent</a>
+<a class="text-sm font-medium text-[var(--neutral-900)] hover:text-[var(--primary-500)]" href="#">Sell</a>
+<a class="text-sm font-medium text-[var(--neutral-900)] hover:text-[var(--primary-500)]" href="#">Mortgages</a>
+<a class="text-sm font-medium text-[var(--neutral-900)] hover:text-[var(--primary-500)]" href="#">Find an Agent</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:block">
+<label class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--neutral-400)]"> search </span>
+<input class="h-10 w-full min-w-0 flex-1 rounded-md border border-[var(--neutral-200)] bg-[var(--neutral-100)] pl-10 pr-4 text-sm text-[var(--neutral-900)] placeholder:text-[var(--neutral-400)] focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" placeholder="Search" value=""/>
+</label>
+</div>
+<button class="hidden h-10 items-center justify-center whitespace-nowrap rounded-md bg-[var(--neutral-100)] px-4 text-sm font-semibold text-[var(--neutral-900)] hover:bg-[var(--neutral-200)] sm:flex">
+              Sign in
+            </button>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-[var(--neutral-900)]"> menu </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<nav aria-label="Breadcrumb" class="mb-4 text-sm">
+<ol class="flex items-center space-x-2 text-[var(--neutral-400)]">
+<li><a class="hover:text-[var(--primary-500)]" href="#">Homes</a></li>
+<li>
+<svg aria-hidden="true" class="h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
+</svg>
+</li>
+<li><span class="font-medium text-[var(--neutral-900)]">123 Maple Street</span></li>
+</ol>
+</nav>
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+<div class="lg:col-span-2">
+<div class="mb-8 overflow-hidden rounded-lg">
+<div class="grid grid-cols-2 gap-2">
+<div class="col-span-2 row-span-2 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBztmfkiw0BeYWgEgm_SDCnqXmd8Nb69-imAwOC9iy1e7oGb0OHdiGbujQT31kLmWp-pClSHE-IkdNaPWleJRJrWtJE6NFZYbHi_UOu5KTUSBxRfbEq6acbmB7p0EEoKp4OfQUx24uiAiUoUg75Nd1iqdNlRzvXA5c-X-GyeKj5EkIav0Ut4AuvUZVJiwE1UZVAVA4fjnviKD3oKvmz9NrIwoVdT30cuoBC7KEwXQloRspXff8V5AtWtzVKcRX0JcNXzru4o7To6I8"); height: 450px;'></div>
+<div class="bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAulkiLS3-P8HZYPv64a01uhTRAMoRKAdIQCLr_0ZzTS9IVR4bS_SJJKvSMcRKVbFrU3M-VKmTv2hISTQBI-ci95C4AOqw9MXy_2U2oXSdLeDJRWwRmypf4IlgWO8EKwMDmziRxDilR46xfBAuRFH2glSAfedjA-IRhc3d-GSBs2cY_2esYMAaWBD8qflnKYrmNmDEeZngsZHejEq6FfbYcV2Hft5LsLtUYYJi11UfCO2grL44PxOr2pBlpLl_EXAV32g35lCW_aNw");'></div>
+<div class="bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCja-iao4TUJ-XrLcdOh_NPbGPQ1ZNDQobF7KO66jyrsX7iWCzERTpvebWu4lMTSTx20lqWEQuPtjFP-Ilxaftqf2UlWb21YpARkC4QXvlpvDOkGNQ2grEZmbUYQSYMJ3P_GWN25aVN3Q9Sn5o34f8Qo-Cuw_JR48GqlpSB75-Di0ePT4sMyslBWQtqOcH-_ckQAdo0Qqqf4N-dGAoYjKRpowWzZjapLhqGP2bcy7E8x_71EUJc4GsMk5v7NyfTEaoq6Y9wLQQJno");'></div>
+</div>
+</div>
+<div>
+<h1 class="text-3xl font-bold text-[var(--neutral-900)]">123 Maple Street, Anytown, CA 91234</h1>
+<p class="mt-4 text-base leading-relaxed text-[var(--neutral-900)]">
+                  This charming 3-bedroom, 2-bathroom home is located in the heart of Anytown. Features include a spacious living room, modern kitchen, and a large backyard with a
+                  pool. Perfect for families or those who love to entertain.
+                </p>
+<div class="mt-8">
+<h2 class="text-2xl font-bold text-[var(--neutral-900)]">Key Features</h2>
+<div class="mt-4 grid grid-cols-2 gap-x-8 gap-y-4 border-t border-[var(--neutral-200)] pt-4 sm:grid-cols-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">bed</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Bedrooms</p>
+<p class="font-semibold text-[var(--neutral-900)]">3</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">shower</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Bathrooms</p>
+<p class="font-semibold text-[var(--neutral-900)]">2</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">square_foot</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Square Footage</p>
+<p class="font-semibold text-[var(--neutral-900)]">1,800 sq ft</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">grass</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Lot Size</p>
+<p class="font-semibold text-[var(--neutral-900)]">0.25 acres</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">calendar_today</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Year Built</p>
+<p class="font-semibold text-[var(--neutral-900)]">1995</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--primary-500)]">garage</span>
+<div>
+<p class="text-sm text-[var(--neutral-400)]">Garage</p>
+<p class="font-semibold text-[var(--neutral-900)]">2-car garage</p>
+</div>
+</div>
+</div>
+<div class="mt-4 grid grid-cols-2 gap-x-8 gap-y-2 pt-4 sm:grid-cols-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Central AC</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Fireplace</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Swimming Pool</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Patio</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Hardwood Floors</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-[var(--primary-500)]">check_circle</span>
+<span class="text-sm font-medium text-[var(--neutral-900)]">Granite Countertops</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1">
+<div class="sticky top-28 rounded-lg border border-[var(--neutral-200)] bg-white p-6 shadow-lg">
+<p class="text-sm text-[var(--neutral-400)]">Price</p>
+<p class="mb-6 text-4xl font-bold text-[var(--neutral-900)]">$750,000</p>
+<h2 class="text-xl font-bold text-[var(--neutral-900)]">Contact Agent</h2>
+<form class="mt-4 space-y-4">
+<div>
+<label class="sr-only" for="name">Your Name</label>
+<input class="h-12 w-full rounded-md border border-[var(--neutral-200)] bg-[var(--neutral-100)] px-4 text-base placeholder:text-[var(--neutral-400)] focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" id="name" placeholder="Your Name" value=""/>
+</div>
+<div>
+<label class="sr-only" for="email">Your Email</label>
+<input class="h-12 w-full rounded-md border border-[var(--neutral-200)] bg-[var(--neutral-100)] px-4 text-base placeholder:text-[var(--neutral-400)] focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" id="email" placeholder="Your Email" type="email" value=""/>
+</div>
+<div>
+<label class="sr-only" for="phone">Your Phone</label>
+<input class="h-12 w-full rounded-md border border-[var(--neutral-200)] bg-[var(--neutral-100)] px-4 text-base placeholder:text-[var(--neutral-400)] focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" id="phone" placeholder="Your Phone" type="tel" value=""/>
+</div>
+<div>
+<label class="sr-only" for="message">Your Message</label>
+<textarea class="w-full resize-none rounded-md border border-[var(--neutral-200)] bg-[var(--neutral-100)] p-4 text-base placeholder:text-[var(--neutral-400)] focus:border-[var(--primary-500)] focus:ring-[var(--primary-500)]" id="message" placeholder="Your Message" rows="5"></textarea>
+</div>
+<button class="h-12 w-full cursor-pointer items-center justify-center rounded-md bg-[var(--primary-500)] px-6 text-base font-bold text-white hover:bg-opacity-90" type="submit">
+                    Send Inquiry
+                  </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

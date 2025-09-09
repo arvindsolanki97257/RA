@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-50: #eff8ff;
+        --primary-100: #dff0ff;
+        --primary-200: #b9e2ff;
+        --primary-300: #88d1ff;
+        --primary-400: #54baff;
+        --primary-500: #1791cf;
+        --primary-600: #1980c0;
+        --primary-700: #1768a1;
+        --primary-800: #185885;
+        --primary-900: #194b6f;
+        --primary-950: #122f4a;
+      }
+    </style>
+</head>
+<body class="bg-gray-50" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 bg-white px-10 py-3">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2.5 text-gray-900" href="#">
+<svg class="h-6 w-6 text-primary-500" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.03 2.03a1 1 0 0 0-1.02.21l-7.5 7a1 1 0 0 0-.21 1.02l2.5 9a1 1 0 0 0 .96.74h15a1 1 0 0 0 .96-.74l2.5-9a1 1 0 0 0-.21-1.02l-7.5-7a1 1 0 0 0-1.02-.21L12 3.85l-1.97-1.82ZM4.47 10l6.5-6.07 6.5 6.07L15.3 18H8.7L4.47 10Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em]">HomeFinder</h2>
+</a>
+<div class="hidden items-center gap-8 md:flex">
+<a class="text-gray-700 text-sm font-medium leading-normal hover:text-primary-500" href="#">Buy</a>
+<a class="text-gray-700 text-sm font-medium leading-normal hover:text-primary-500" href="#">Rent</a>
+<a class="text-gray-700 text-sm font-medium leading-normal hover:text-primary-500" href="#">Sell</a>
+<a class="text-gray-700 text-sm font-medium leading-normal hover:text-primary-500" href="#">Mortgage</a>
+<a class="text-gray-700 text-sm font-medium leading-normal hover:text-primary-500" href="#">Find an Agent</a>
+</div>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-md h-full">
+<div class="text-gray-500 flex border-none bg-gray-100 items-center justify-center pl-3 rounded-l-md border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-gray-900 focus:outline-0 focus:ring-2 focus:ring-primary-500 border-none bg-gray-100 focus:border-none h-full placeholder:text-gray-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search..." value=""/>
+</div>
+</label>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-gray-100 text-gray-700 hover:bg-gray-200 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<div class="text-gray-700" data-icon="Heart" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"></path>
+</svg>
+</div>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnv6fsI0123-N6MvTpB8AjPYcyGejeWSr46un3Stsmc15o8yzlWxgSJpQpT--LBT2WO5uXI93ybMamWRXZE8UK3Taql_MLVocorE-yXtbsmZwEeOu853NAHwJ53jlUt6tu_PD3DtfQVQ1pUNvYx3AKxQjjt0iIJEXgShPqbl0M32AMFYzKKUJsWi1bUmkq3AqxIlQQeGFRUntv0XQK4wjLUexhELwAsT3AGx7qSWPksOa-mP1tshd6fMoPSFtAewluAqdvbJp88aU");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-5xl">
+<div class="rounded-lg bg-white shadow-sm @container">
+<div class="p-6 md:p-8">
+<div class="flex w-full flex-col gap-6 @[520px]:flex-row @[520px]:justify-between @[520px]:items-start">
+<div class="flex flex-col items-center gap-6 text-center @[520px]:flex-row @[520px]:text-left">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex-shrink-0 size-32" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCUeScpHQJ30evHn6GX99jT6opfNs16rogJJdNnpRh3BNxNezr4CcUpPWPi-HO_DjSQDRjG9_VEqLSOnxGnxr6bfAG8abJZYLaRxa2z8xWd0jyCM26ZEMyq1VMzexEFfBejzHHuHAIaGDNlcJi3vNjebVvwby4rW3HVWdNUDag23BCqlAMWQlplcTQ745eOEqEVHff_NZeMoFZVQlsjIg48fVaII4tprAl7Cp4xmXrjjv2mxfUn8hPQ2rOWIH07Yu3eH4cknyKVKc");'></div>
+<div class="flex flex-col justify-center">
+<h1 class="text-gray-900 text-3xl font-bold leading-tight tracking-[-0.015em]">Sarah Miller</h1>
+<p class="text-gray-600 text-lg font-normal leading-normal">Real Estate Agent at Premier Properties</p>
+<p class="text-gray-500 text-base font-normal leading-normal">Serving the Greater Metro Area</p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-6 bg-primary-500 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[520px]:w-auto hover:bg-primary-600 transition-colors">
+<span class="truncate">Contact Agent</span>
+</button>
+</div>
+</div>
+<div class="border-t border-gray-200">
+<div class="flex gap-4 px-4 sm:px-6">
+<a class="flex items-center justify-center border-b-2 border-primary-500 text-primary-500 py-3" href="#">
+<p class="text-sm font-semibold leading-normal">About</p>
+</a>
+<a class="flex items-center justify-center border-b-2 border-transparent text-gray-500 hover:text-primary-500 hover:border-primary-500/50 py-3" href="#">
+<p class="text-sm font-semibold leading-normal">Listings</p>
+</a>
+<a class="flex items-center justify-center border-b-2 border-transparent text-gray-500 hover:text-primary-500 hover:border-primary-500/50 py-3" href="#">
+<p class="text-sm font-semibold leading-normal">Reviews</p>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3">
+<div class="flex flex-col gap-8 lg:col-span-2">
+<div class="rounded-lg bg-white p-6 shadow-sm">
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em]">About Sarah</h2>
+<p class="text-gray-700 text-base font-normal leading-relaxed mt-4">
+                    Sarah Miller is a seasoned real estate professional with over 10 years of experience in the industry. Specializing in residential properties in the Greater
+                    Metro Area, Sarah is known for her exceptional client service, market expertise, and dedication to achieving the best possible outcomes for her clients. Her
+                    approach is client-focused, ensuring a smooth and successful real estate experience.
+                  </p>
+</div>
+<div class="rounded-lg bg-white p-6 shadow-sm">
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em]">Areas of Expertise</h2>
+<div class="flex gap-3 flex-wrap mt-4">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-primary-50 px-3">
+<p class="text-primary-700 text-sm font-medium leading-normal">Residential Properties</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-primary-50 px-3">
+<p class="text-primary-700 text-sm font-medium leading-normal">First-Time Homebuyers</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-primary-50 px-3">
+<p class="text-primary-700 text-sm font-medium leading-normal">Luxury Homes</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-primary-50 px-3">
+<p class="text-primary-700 text-sm font-medium leading-normal">Investment Properties</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-md bg-primary-50 px-3">
+<p class="text-primary-700 text-sm font-medium leading-normal">Relocation Services</p>
+</div>
+</div>
+</div>
+<div class="rounded-lg bg-white p-6 shadow-sm">
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em]">Client Testimonials</h2>
+<div class="flex flex-col gap-8 mt-6">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLWwos2xujE8D_yr6mtE6Av5sk6OJ3D5FE-oQUWPlNu1FZ6wrHAyJwckt2aa9oTsS4QfkZByCVU5IkrUoJ_xuFovhGRoDlDGk9lC-6ACzWvz3ZNhqNoxQcvR3EwACfVGkaYz-d31d9i-dA11PJxG0XWhNYrzl55QW0cMwrGxJAFyB_fPQsj2WfBSFsgWsUM-vGy0kgM0kPbxbCkbkgQF5LJNvBJv9Wrm7_qqHIF93xWI6ye8HG9FdcSGai2NojTLv_xg4jUcK9PE");'></div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold leading-normal">Emily Carter</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">2 months ago</p>
+</div>
+</div>
+<div class="flex gap-0.5 text-yellow-400">
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+</div>
+<p class="text-gray-700 text-base font-normal leading-relaxed">
+                        "Sarah was incredibly helpful and knowledgeable throughout the entire home-buying process. She went above and beyond to ensure we found the perfect home for
+                        our family. Highly recommend!"
+                      </p>
+</div>
+<div class="border-t border-gray-200"></div>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtZeZ4bp_usbPFdtR9ZIWKRfosp353Wjr3gCAahtJujEgK27QsJLRZLz2ozZVYH3btL_qTb1_ZmlQkBDt-Epe0ns8aRBLUcQ1H0nGlghJbWvFmXcuLtX-xTB3gI06cm0Pi-V88b_iIu6DSHJo3s4PrraB5xyfylIWUkTkrOlfjeyLPQAuQXVEx9Jcq6ucT8TB6n5DqgwX0RfNTacC3TnbpkHSX84WLW0rZCpJPs7PKXTm-lOUTlnjjXUX-TaJfg8T3iAQy2mrZwWs");'></div>
+<div class="flex-1">
+<p class="text-gray-900 text-base font-semibold leading-normal">David Lee</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">6 months ago</p>
+</div>
+</div>
+<div class="flex gap-0.5 text-yellow-400">
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+<span class="material-symbols-outlined !text-xl">star</span>
+</div>
+<p class="text-gray-700 text-base font-normal leading-relaxed">
+                        "Sarah's expertise and professionalism made selling our home a breeze. She provided excellent guidance and support every step of the way. We couldn't be
+                        happier with the results."
+                      </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1">
+<div class="rounded-lg bg-white p-6 shadow-sm sticky top-10">
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em]">Current Listings</h2>
+<div class="flex flex-col gap-6 mt-6">
+<a class="flex flex-col gap-3 group" href="#">
+<div class="w-full overflow-hidden rounded-md">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBu0spCf3UXRzxLx9T_AZOL-ABJAi0ojT6-_jF-SqPs9pOKoZSj-CHOKSn-LjzOsq-nHICwIryvAl4KsfaVkkl5KQDHHormaYAFfF7GN2kqElGf5yNEwrnjyiSAfGqhCzOXsFPgOPN_ch_5db2L0CSrM826JxRiPtLMqUg93y8Fl_INqRR3a1MNnZsVrOmiEBRDWYKzY8bM-D6cIPWcjVK8RILqvUrevNiy8fPtILQZQKSEwt4XbibLUG0wbOgAb2_D-maGJVh4zY8");'></div>
+</div>
+<div>
+<p class="text-gray-900 text-base font-semibold leading-normal group-hover:text-primary-500 transition-colors">
+                          Charming 3-Bedroom Home in Suburbia
+                        </p>
+<p class="text-gray-500 text-sm font-normal leading-normal">3 beds � 2 baths � 1,800 sq ft</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 group" href="#">
+<div class="w-full overflow-hidden rounded-md">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover group-hover:scale-105 transition-transform duration-300" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACVnM2o35C1LZD0sRNdfS89OgrQLqqTllBUrelCt6l24HUkX37S1BkdY5ryIz0nTJ7z0glaoNv1eyqJwsIPAs21gvqjXpgZYl3XKwZH3MVA0akjiH_sbfBKpEJU7EKw1R8VnouBvAbdttGC1QoAAOVmZfwj0eCg9g73A6L11KrHgG79jn0TP0nqs0AjRSVoCMD53YwlgO_FmpWG1aJHssB1UYeydxC2qsRC10-nFdZvi7GBi0ggBHvyNlrXFnICigbYqots5QtQJ4");'></div>
+</div>
+<div>
+<p class="text-gray-900 text-base font-semibold leading-normal group-hover:text-primary-500 transition-colors">Modern Condo with City Views</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">2 beds � 2 baths � 1,200 sq ft</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

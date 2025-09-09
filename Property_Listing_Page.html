@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1791cf;
+        --secondary-color: #f0f3f4;
+        --text-primary: #111518;
+        --text-secondary: #637c88;
+      }
+    </style>
+</head>
+<body class="bg-white" style='font-family: "Public Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-2xl font-bold text-[var(--primary-color)]">
+<span class="material-symbols-outlined !text-3xl"> real_estate_agent </span>
+<h1 class="text-xl font-bold">HomeFinder</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-gray-900 hover:text-[var(--primary-color)] text-base font-medium" href="#">Buy</a>
+<a class="text-gray-900 hover:text-[var(--primary-color)] text-base font-medium" href="#">Rent</a>
+<a class="text-gray-900 hover:text-[var(--primary-color)] text-base font-medium" href="#">Sell</a>
+<a class="text-gray-900 hover:text-[var(--primary-color)] text-base font-medium" href="#">Mortgage</a>
+<a class="text-gray-900 hover:text-[var(--primary-color)] text-base font-medium" href="#">Find Agent</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-gray-900 hover:text-[var(--primary-color)]">
+<span class="material-symbols-outlined"> search </span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-6 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-wide shadow-sm hover:bg-opacity-90">
+              Sign in
+            </button>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-8">
+<div class="relative">
+<input class="form-input w-full rounded-md border-gray-300 py-3 pl-12 pr-4 text-lg text-gray-900 placeholder-gray-500 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="Search by address, city, or zip code" type="text" value="San Francisco, CA"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"> search </span>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+<span class="material-symbols-outlined"> close </span>
+</button>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 mb-6">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Price</span>
+<span class="material-symbols-outlined !text-xl"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Beds &amp; Baths</span>
+<span class="material-symbols-outlined !text-xl"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Property Type</span>
+<span class="material-symbols-outlined !text-xl"> expand_more </span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>More</span>
+<span class="material-symbols-outlined !text-xl"> expand_more </span>
+</button>
+<div class="flex-grow"></div>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-gray-300 bg-white px-4 text-sm font-medium text-gray-700 hover:bg-gray-50">
+<span>Sort: Newest</span>
+<span class="material-symbols-outlined !text-xl"> expand_more </span>
+</button>
+</div>
+<h2 class="text-2xl font-bold text-gray-900 mb-6">1,234 results for San Francisco</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZa5c6Yt-vBO7LYtXOPwsbXyKG8fprXJjJAZUFuonC3Tn3Yxhf0oqVj69dCASuFzvCxfPI4Lu2paOrYm9oD_04zPFFcMGV09DwsP3orvVq2V4ZsdkbgYFhJZXPy8vLfp40DfzAUwG4ye5McnY8QjtomLGOobPr_gcgYM90E5DL7n9pXmv8Qgmcsb0ceFpwXUQxZ0YabaxsoXBO5o3OllLg9GS8c9Ioio_x3MUCZqnYQOSWgmzWWR1J7cN2IM1hkL_NYu2XvH-JvJE");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,200,000</p>
+<p class="text-gray-600 text-base">123 Main St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 2 baths · 1,200 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9SIERYCVwZZFUy3ttCJUSlsSC_mJgG7fAxMwKL8KE5S6KqBBLkFs7lwK3zXAFM431Xdb9PmkIb4I3R-NCbY8Vhq25nXAMNf9o9t7SKWPpSFzHxoMdCWU14o5Kui2T8nuOkc7zmGU8J6ZHqe6B6bqF2kOkd1UUTmQ2OLktdqPJytoGsYNa6js8pNKY99nl9Pk9-xci5Nn-3SnkuLja02g-j9Ls8hQt4WTOo77wmRbMNHX13P9U6FKNj_4tnNrs9p-LGJ671rq1Sss");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$850,000</p>
+<p class="text-gray-600 text-base">456 Oak Ave, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,500 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAilrWx7akdnjCUcoH7iBbzMqptOhbQVdDpoIJhzC3kt74gLZdlxlIzxQtMwcepP5S-mUOqhVEszfms7LJ_Qn72gejw_ozwRhI2n0LdhdRWQOPJv6sczauio1gxbBRfPzrS7uDORltITErtM2UStL2y-sKAOvTBbrdnBZk4SQk66r3-vlSXrUq2VvBcPfxu_ZdWMXtdgZTpa4Qz9Zjx_3A5RrqhVWe6ng2LLaUY7fBsz0hKzvSHZWJlpZAv7hgzN_i_8xuDMuC6B5g");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,500,000</p>
+<p class="text-gray-600 text-base">789 Pine Rd, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">4 beds · 3 baths · 2,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6pw0xlYPuVaD_CNfoWEOyN1421NFi_2Wf8peqIIRoxpT3hdMRrCczQbxFrxxtqkrewFG6EBdIL6BdZ-o62NyY8vv7YnDyB83w18aw8rBb-4X6lCqAOABNj47zjoMo3KVypiKYBIZwCSWsp6dBEMW2pgZrAd2Aw3cM8synkQtc5NAabkZEgWkC5G-7FEgYx13h9LTqVDs7Jl7OK3UYQlDy6m_4eI40Pawli1ECv5LZEQES2rBPWE1ub6a2PY24Bt52hc_0g2TithI");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$950,000</p>
+<p class="text-gray-600 text-base">101 Maple St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 1 bath · 1,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWQ549QiASVoQaLJI1QDTCdvq1tKtT6pdvC2PYeSSnBIs-Am9sjOAxrAoqgRJHIX5W0AMZRC8wWyuP5J1eztP38SNYgvh4Xq0-M5suHavaJ-oS-KTCjfGPlBkZSh5e-OZ2GeFEVzgiLrycXgwNoYU1M607I0yw10CIcgYpGcYIj5vEN2--gPirhOWjlnzg2LFRggLm6pE4Q9X9He2IRdgdh7Mf03pDgAUW--VQ6aTgymKR0Vr-bCevetJDuyl7WIHwjezcsKVdavs");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,100,000</p>
+<p class="text-gray-600 text-base">212 Birch Ln, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,800 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsgTiDvkhAVosOwPiQbmebzhND6Wa7IApPDV0HJMdNmpgvQex27D_MSidrDgsnx2mJnLM7ejiFD-GJIBKEljzFyap7fbO7RzkteNRcFJMUxjq0yc24095hfkTvf1Rbos37kZcfoqT3X-Q-csn9emOIEPe5nvduCp3Z_6pJ-GDy7mQDdcvIc4nB65hAaMxlXY6Dgj7zV7DPBUdXUVvhjhg3KLDzTZz7FzTOq7kev6RXOonazUes7qq7iF79vzk2srFM9Qc7IsvmYVU");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$750,000</p>
+<p class="text-gray-600 text-base">333 Cedar Ct, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">1 bed · 1 bath · 800 sqft</p>
+</div>
+</div>
+
+
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZa5c6Yt-vBO7LYtXOPwsbXyKG8fprXJjJAZUFuonC3Tn3Yxhf0oqVj69dCASuFzvCxfPI4Lu2paOrYm9oD_04zPFFcMGV09DwsP3orvVq2V4ZsdkbgYFhJZXPy8vLfp40DfzAUwG4ye5McnY8QjtomLGOobPr_gcgYM90E5DL7n9pXmv8Qgmcsb0ceFpwXUQxZ0YabaxsoXBO5o3OllLg9GS8c9Ioio_x3MUCZqnYQOSWgmzWWR1J7cN2IM1hkL_NYu2XvH-JvJE");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,200,000</p>
+<p class="text-gray-600 text-base">123 Main St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 2 baths · 1,200 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9SIERYCVwZZFUy3ttCJUSlsSC_mJgG7fAxMwKL8KE5S6KqBBLkFs7lwK3zXAFM431Xdb9PmkIb4I3R-NCbY8Vhq25nXAMNf9o9t7SKWPpSFzHxoMdCWU14o5Kui2T8nuOkc7zmGU8J6ZHqe6B6bqF2kOkd1UUTmQ2OLktdqPJytoGsYNa6js8pNKY99nl9Pk9-xci5Nn-3SnkuLja02g-j9Ls8hQt4WTOo77wmRbMNHX13P9U6FKNj_4tnNrs9p-LGJ671rq1Sss");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$850,000</p>
+<p class="text-gray-600 text-base">456 Oak Ave, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,500 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAilrWx7akdnjCUcoH7iBbzMqptOhbQVdDpoIJhzC3kt74gLZdlxlIzxQtMwcepP5S-mUOqhVEszfms7LJ_Qn72gejw_ozwRhI2n0LdhdRWQOPJv6sczauio1gxbBRfPzrS7uDORltITErtM2UStL2y-sKAOvTBbrdnBZk4SQk66r3-vlSXrUq2VvBcPfxu_ZdWMXtdgZTpa4Qz9Zjx_3A5RrqhVWe6ng2LLaUY7fBsz0hKzvSHZWJlpZAv7hgzN_i_8xuDMuC6B5g");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,500,000</p>
+<p class="text-gray-600 text-base">789 Pine Rd, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">4 beds · 3 baths · 2,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6pw0xlYPuVaD_CNfoWEOyN1421NFi_2Wf8peqIIRoxpT3hdMRrCczQbxFrxxtqkrewFG6EBdIL6BdZ-o62NyY8vv7YnDyB83w18aw8rBb-4X6lCqAOABNj47zjoMo3KVypiKYBIZwCSWsp6dBEMW2pgZrAd2Aw3cM8synkQtc5NAabkZEgWkC5G-7FEgYx13h9LTqVDs7Jl7OK3UYQlDy6m_4eI40Pawli1ECv5LZEQES2rBPWE1ub6a2PY24Bt52hc_0g2TithI");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$950,000</p>
+<p class="text-gray-600 text-base">101 Maple St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 1 bath · 1,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWQ549QiASVoQaLJI1QDTCdvq1tKtT6pdvC2PYeSSnBIs-Am9sjOAxrAoqgRJHIX5W0AMZRC8wWyuP5J1eztP38SNYgvh4Xq0-M5suHavaJ-oS-KTCjfGPlBkZSh5e-OZ2GeFEVzgiLrycXgwNoYU1M607I0yw10CIcgYpGcYIj5vEN2--gPirhOWjlnzg2LFRggLm6pE4Q9X9He2IRdgdh7Mf03pDgAUW--VQ6aTgymKR0Vr-bCevetJDuyl7WIHwjezcsKVdavs");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,100,000</p>
+<p class="text-gray-600 text-base">212 Birch Ln, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,800 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsgTiDvkhAVosOwPiQbmebzhND6Wa7IApPDV0HJMdNmpgvQex27D_MSidrDgsnx2mJnLM7ejiFD-GJIBKEljzFyap7fbO7RzkteNRcFJMUxjq0yc24095hfkTvf1Rbos37kZcfoqT3X-Q-csn9emOIEPe5nvduCp3Z_6pJ-GDy7mQDdcvIc4nB65hAaMxlXY6Dgj7zV7DPBUdXUVvhjhg3KLDzTZz7FzTOq7kev6RXOonazUes7qq7iF79vzk2srFM9Qc7IsvmYVU");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$750,000</p>
+<p class="text-gray-600 text-base">333 Cedar Ct, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">1 bed · 1 bath · 800 sqft</p>
+</div>
+</div>
+
+
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZa5c6Yt-vBO7LYtXOPwsbXyKG8fprXJjJAZUFuonC3Tn3Yxhf0oqVj69dCASuFzvCxfPI4Lu2paOrYm9oD_04zPFFcMGV09DwsP3orvVq2V4ZsdkbgYFhJZXPy8vLfp40DfzAUwG4ye5McnY8QjtomLGOobPr_gcgYM90E5DL7n9pXmv8Qgmcsb0ceFpwXUQxZ0YabaxsoXBO5o3OllLg9GS8c9Ioio_x3MUCZqnYQOSWgmzWWR1J7cN2IM1hkL_NYu2XvH-JvJE");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,200,000</p>
+<p class="text-gray-600 text-base">123 Main St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 2 baths · 1,200 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9SIERYCVwZZFUy3ttCJUSlsSC_mJgG7fAxMwKL8KE5S6KqBBLkFs7lwK3zXAFM431Xdb9PmkIb4I3R-NCbY8Vhq25nXAMNf9o9t7SKWPpSFzHxoMdCWU14o5Kui2T8nuOkc7zmGU8J6ZHqe6B6bqF2kOkd1UUTmQ2OLktdqPJytoGsYNa6js8pNKY99nl9Pk9-xci5Nn-3SnkuLja02g-j9Ls8hQt4WTOo77wmRbMNHX13P9U6FKNj_4tnNrs9p-LGJ671rq1Sss");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$850,000</p>
+<p class="text-gray-600 text-base">456 Oak Ave, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,500 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAilrWx7akdnjCUcoH7iBbzMqptOhbQVdDpoIJhzC3kt74gLZdlxlIzxQtMwcepP5S-mUOqhVEszfms7LJ_Qn72gejw_ozwRhI2n0LdhdRWQOPJv6sczauio1gxbBRfPzrS7uDORltITErtM2UStL2y-sKAOvTBbrdnBZk4SQk66r3-vlSXrUq2VvBcPfxu_ZdWMXtdgZTpa4Qz9Zjx_3A5RrqhVWe6ng2LLaUY7fBsz0hKzvSHZWJlpZAv7hgzN_i_8xuDMuC6B5g");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,500,000</p>
+<p class="text-gray-600 text-base">789 Pine Rd, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">4 beds · 3 baths · 2,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6pw0xlYPuVaD_CNfoWEOyN1421NFi_2Wf8peqIIRoxpT3hdMRrCczQbxFrxxtqkrewFG6EBdIL6BdZ-o62NyY8vv7YnDyB83w18aw8rBb-4X6lCqAOABNj47zjoMo3KVypiKYBIZwCSWsp6dBEMW2pgZrAd2Aw3cM8synkQtc5NAabkZEgWkC5G-7FEgYx13h9LTqVDs7Jl7OK3UYQlDy6m_4eI40Pawli1ECv5LZEQES2rBPWE1ub6a2PY24Bt52hc_0g2TithI");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$950,000</p>
+<p class="text-gray-600 text-base">101 Maple St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 1 bath · 1,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWQ549QiASVoQaLJI1QDTCdvq1tKtT6pdvC2PYeSSnBIs-Am9sjOAxrAoqgRJHIX5W0AMZRC8wWyuP5J1eztP38SNYgvh4Xq0-M5suHavaJ-oS-KTCjfGPlBkZSh5e-OZ2GeFEVzgiLrycXgwNoYU1M607I0yw10CIcgYpGcYIj5vEN2--gPirhOWjlnzg2LFRggLm6pE4Q9X9He2IRdgdh7Mf03pDgAUW--VQ6aTgymKR0Vr-bCevetJDuyl7WIHwjezcsKVdavs");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,100,000</p>
+<p class="text-gray-600 text-base">212 Birch Ln, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,800 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsgTiDvkhAVosOwPiQbmebzhND6Wa7IApPDV0HJMdNmpgvQex27D_MSidrDgsnx2mJnLM7ejiFD-GJIBKEljzFyap7fbO7RzkteNRcFJMUxjq0yc24095hfkTvf1Rbos37kZcfoqT3X-Q-csn9emOIEPe5nvduCp3Z_6pJ-GDy7mQDdcvIc4nB65hAaMxlXY6Dgj7zV7DPBUdXUVvhjhg3KLDzTZz7FzTOq7kev6RXOonazUes7qq7iF79vzk2srFM9Qc7IsvmYVU");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$750,000</p>
+<p class="text-gray-600 text-base">333 Cedar Ct, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">1 bed · 1 bath · 800 sqft</p>
+</div>
+</div>
+
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZa5c6Yt-vBO7LYtXOPwsbXyKG8fprXJjJAZUFuonC3Tn3Yxhf0oqVj69dCASuFzvCxfPI4Lu2paOrYm9oD_04zPFFcMGV09DwsP3orvVq2V4ZsdkbgYFhJZXPy8vLfp40DfzAUwG4ye5McnY8QjtomLGOobPr_gcgYM90E5DL7n9pXmv8Qgmcsb0ceFpwXUQxZ0YabaxsoXBO5o3OllLg9GS8c9Ioio_x3MUCZqnYQOSWgmzWWR1J7cN2IM1hkL_NYu2XvH-JvJE");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,200,000</p>
+<p class="text-gray-600 text-base">123 Main St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 2 baths · 1,200 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9SIERYCVwZZFUy3ttCJUSlsSC_mJgG7fAxMwKL8KE5S6KqBBLkFs7lwK3zXAFM431Xdb9PmkIb4I3R-NCbY8Vhq25nXAMNf9o9t7SKWPpSFzHxoMdCWU14o5Kui2T8nuOkc7zmGU8J6ZHqe6B6bqF2kOkd1UUTmQ2OLktdqPJytoGsYNa6js8pNKY99nl9Pk9-xci5Nn-3SnkuLja02g-j9Ls8hQt4WTOo77wmRbMNHX13P9U6FKNj_4tnNrs9p-LGJ671rq1Sss");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$850,000</p>
+<p class="text-gray-600 text-base">456 Oak Ave, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,500 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAilrWx7akdnjCUcoH7iBbzMqptOhbQVdDpoIJhzC3kt74gLZdlxlIzxQtMwcepP5S-mUOqhVEszfms7LJ_Qn72gejw_ozwRhI2n0LdhdRWQOPJv6sczauio1gxbBRfPzrS7uDORltITErtM2UStL2y-sKAOvTBbrdnBZk4SQk66r3-vlSXrUq2VvBcPfxu_ZdWMXtdgZTpa4Qz9Zjx_3A5RrqhVWe6ng2LLaUY7fBsz0hKzvSHZWJlpZAv7hgzN_i_8xuDMuC6B5g");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,500,000</p>
+<p class="text-gray-600 text-base">789 Pine Rd, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">4 beds · 3 baths · 2,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6pw0xlYPuVaD_CNfoWEOyN1421NFi_2Wf8peqIIRoxpT3hdMRrCczQbxFrxxtqkrewFG6EBdIL6BdZ-o62NyY8vv7YnDyB83w18aw8rBb-4X6lCqAOABNj47zjoMo3KVypiKYBIZwCSWsp6dBEMW2pgZrAd2Aw3cM8synkQtc5NAabkZEgWkC5G-7FEgYx13h9LTqVDs7Jl7OK3UYQlDy6m_4eI40Pawli1ECv5LZEQES2rBPWE1ub6a2PY24Bt52hc_0g2TithI");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$950,000</p>
+<p class="text-gray-600 text-base">101 Maple St, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">2 beds · 1 bath · 1,000 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWQ549QiASVoQaLJI1QDTCdvq1tKtT6pdvC2PYeSSnBIs-Am9sjOAxrAoqgRJHIX5W0AMZRC8wWyuP5J1eztP38SNYgvh4Xq0-M5suHavaJ-oS-KTCjfGPlBkZSh5e-OZ2GeFEVzgiLrycXgwNoYU1M607I0yw10CIcgYpGcYIj5vEN2--gPirhOWjlnzg2LFRggLm6pE4Q9X9He2IRdgdh7Mf03pDgAUW--VQ6aTgymKR0Vr-bCevetJDuyl7WIHwjezcsKVdavs");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$1,100,000</p>
+<p class="text-gray-600 text-base">212 Birch Ln, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">3 beds · 2 baths · 1,800 sqft</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg overflow-hidden shadow-sm border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsgTiDvkhAVosOwPiQbmebzhND6Wa7IApPDV0HJMdNmpgvQex27D_MSidrDgsnx2mJnLM7ejiFD-GJIBKEljzFyap7fbO7RzkteNRcFJMUxjq0yc24095hfkTvf1Rbos37kZcfoqT3X-Q-csn9emOIEPe5nvduCp3Z_6pJ-GDy7mQDdcvIc4nB65hAaMxlXY6Dgj7zV7DPBUdXUVvhjhg3KLDzTZz7FzTOq7kev6RXOonazUes7qq7iF79vzk2srFM9Qc7IsvmYVU");'></div>
+<div class="p-4">
+<p class="text-xl font-bold text-gray-900">$750,000</p>
+<p class="text-gray-600 text-base">333 Cedar Ct, San Francisco, CA</p>
+<p class="text-gray-600 text-sm mt-1">1 bed · 1 bath · 800 sqft</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center py-8">
+<nav aria-label="Pagination">
+<ul class="inline-flex items-center -space-x-px">
+<li>
+<a class="flex h-10 items-center justify-center rounded-l-md border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+</li>
+<li>
+<a aria-current="page" class="flex h-10 items-center justify-center border border-gray-300 bg-[var(--primary-color)] bg-opacity-10 px-4 text-sm font-bold text-[var(--primary-color)]" href="#">1</a>
+</li>
+<li>
+<a class="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 text-sm text-gray-500 hover:bg-gray-100" href="#">2</a>
+</li>
+<li>
+<a class="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 text-sm text-gray-500 hover:bg-gray-100" href="#">3</a>
+</li>
+<li>
+<span class="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 text-sm text-gray-500">...</span>
+</li>
+<li>
+<a class="flex h-10 items-center justify-center border border-gray-300 bg-white px-4 text-sm text-gray-500 hover:bg-gray-100" href="#">10</a>
+</li>
+<li>
+<a class="flex h-10 items-center justify-center rounded-r-md border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

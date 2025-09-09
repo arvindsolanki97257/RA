@@ -1,0 +1,248 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1791cf;
+        --secondary-color: #f0f3f4;
+        --text-primary: #111518;
+        --text-secondary: #637c88;
+      }
+      .timeline::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 15px;
+        width: 2px;
+        background-color: #dce2e5;
+      }
+    </style>
+</head>
+<body class="bg-gray-50" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-4 shadow-sm">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-2xl font-bold text-[var(--text-primary)]">
+<div class="size-8 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="tracking-tight">HomeFinder</h1>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors" href="#">Buy</a>
+<a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors" href="#">Rent</a>
+<a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors" href="#">Sell</a>
+<a class="text-base font-bold text-[var(--primary-color)]" href="#">Home Loans</a>
+<a class="text-base font-medium text-[var(--text-primary)] hover:text-[var(--primary-color)] transition-colors" href="#">Find Agent</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<label class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"> search </span>
+<input class="form-input w-full rounded-full border-gray-300 bg-gray-100 pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent" placeholder="City, Address, Zip" value=""/>
+</label>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined"> favorite_border </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBc-qIFndLuWVQ7vyJpNqkw2cRtcJdus3vNxLEp_IQxU9nFASato9u0ICwwXaB-98WfTlOXMHBpdSjotlvJ1ufAC74-NofXciuFWvRpEuoY7saMMSCBfZelCLZSW5ViwktocvniDOMH_n-bKXbsBTQPJo6Ii7kfo5gwLMCfAUQkhWDQPaJKWLTIufJN1LRW4dAMTEtazfyWmf4z5tgiJ2SeY2S4n2hs4hbTZW6EhPwbiJVE3nyqLmBk8VAJK3RuvqCZhrql2s1P7Fc");'></div>
+</div>
+</header>
+<main class="flex-1 bg-gray-50">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-6xl">
+<div class="text-center mb-12">
+<h1 class="text-5xl font-bold text-[var(--text-primary)] tracking-tight">Find Your Perfect Home Loan</h1>
+<p class="text-lg text-[var(--text-secondary)] mt-4 max-w-3xl mx-auto">Explore a variety of mortgage options to find the perfect fit for your home buying journey. Our tools and experts are here to guide you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="bg-[var(--primary-color)] text-white rounded-full size-12 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl"> lock </span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Fixed-Rate Mortgage</h3>
+<p class="text-base text-[var(--text-secondary)] mt-2">Offers a consistent interest rate throughout the loan term, providing stability in monthly payments.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="bg-[var(--primary-color)] text-white rounded-full size-12 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl"> trending_up </span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Adjustable-Rate (ARM)</h3>
+<p class="text-base text-[var(--text-secondary)] mt-2">Features an interest rate that adjusts periodically, potentially leading to lower initial payments.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="bg-[var(--primary-color)] text-white rounded-full size-12 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl"> security </span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Government-Backed</h3>
+<p class="text-base text-[var(--text-secondary)] mt-2">Includes FHA and VA loans, designed to assist specific groups like first-time buyers and veterans.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+<h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">Loan Application Process</h2>
+<div class="relative timeline">
+<div class="relative flex gap-6 pb-8">
+<div class="z-10 mt-1 size-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center ring-8 ring-white">1</div>
+<div>
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Pre-Approval</h4>
+<p class="text-base text-[var(--text-secondary)]">Get pre-approved to understand your budget and strengthen your offer.</p>
+</div>
+</div>
+<div class="relative flex gap-6 pb-8">
+<div class="z-10 mt-1 size-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center ring-8 ring-white">2</div>
+<div>
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Property Selection</h4>
+<p class="text-base text-[var(--text-secondary)]">Find your dream home with the help of our expert agents.</p>
+</div>
+</div>
+<div class="relative flex gap-6 pb-8">
+<div class="z-10 mt-1 size-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center ring-8 ring-white">3</div>
+<div>
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Loan Application</h4>
+<p class="text-base text-[var(--text-secondary)]">Complete and submit your loan application with our streamlined process.</p>
+</div>
+</div>
+<div class="relative flex gap-6">
+<div class="z-10 mt-1 size-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center ring-8 ring-white">4</div>
+<div>
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Closing</h4>
+<p class="text-base text-[var(--text-secondary)]">Finalize the loan, get the keys, and start your new chapter.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+<h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">Mortgage Calculator</h2>
+<div class="space-y-4">
+<div>
+<label class="text-sm font-medium text-[var(--text-primary)]">Home Price</label>
+<div class="relative mt-1">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="text-gray-500 sm:text-sm">$</span>
+</div>
+<input class="form-input w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="500,000" type="text"/>
+</div>
+</div>
+<div>
+<label class="text-sm font-medium text-[var(--text-primary)]">Down Payment</label>
+<div class="relative mt-1">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+<span class="text-gray-500 sm:text-sm">$</span>
+</div>
+<input class="form-input w-full rounded-md border-gray-300 pl-7 pr-12 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="50,000" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="text-sm font-medium text-[var(--text-primary)]">Loan Term</label>
+<select class="form-select mt-1 block w-full rounded-md border-gray-300 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]">
+<option>30 Years</option>
+<option>20 Years</option>
+<option>15 Years</option>
+<option>10 Years</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-medium text-[var(--text-primary)]">Interest Rate</label>
+<div class="relative mt-1">
+<input class="form-input w-full rounded-md border-gray-300 pr-8 focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)]" placeholder="4.5" type="text"/>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+<span class="text-gray-500 sm:text-sm">%</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold rounded-md hover:bg-blue-700 transition-colors">
+                    Calculate Estimated Payment
+                  </button>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="bg-white p-8 rounded-xl border border-gray-200 shadow-lg">
+<h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">Loan Application Checklist</h2>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
+<input class="form-checkbox h-5 w-5 rounded text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="checklist-1" type="checkbox"/>
+<label class="text-base text-[var(--text-primary)]" for="checklist-1">Personal Identification (Driver's License, Passport)</label>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
+<input class="form-checkbox h-5 w-5 rounded text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="checklist-2" type="checkbox"/>
+<label class="text-base text-[var(--text-primary)]" for="checklist-2">Income Verification (Pay Stubs, W-2s, Tax Returns)</label>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
+<input class="form-checkbox h-5 w-5 rounded text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="checklist-3" type="checkbox"/>
+<label class="text-base text-[var(--text-primary)]" for="checklist-3">Asset Information (Bank Statements, Investments)</label>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
+<input class="form-checkbox h-5 w-5 rounded text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="checklist-4" type="checkbox"/>
+<label class="text-base text-[var(--text-primary)]" for="checklist-4">Credit History (Authorization for Credit Report)</label>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-lg bg-gray-50 border border-gray-200">
+<input class="form-checkbox h-5 w-5 rounded text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="checklist-5" type="checkbox"/>
+<label class="text-base text-[var(--text-primary)]" for="checklist-5">Property Information (If you've found a house)</label>
+</div>
+</div>
+<div class="mt-6">
+<div class="w-full bg-gray-200 rounded-full h-2.5">
+<div class="bg-[var(--primary-color)] h-2.5 rounded-full" style="width: 20%"></div>
+</div>
+<p class="text-sm text-right text-[var(--text-secondary)] mt-1">1 of 5 items completed</p>
+</div>
+</div>
+</div>
+<div class="mt-20">
+<h2 class="text-3xl font-bold text-[var(--text-primary)] text-center mb-8">Frequently Asked Questions</h2>
+<div class="max-w-3xl mx-auto space-y-4">
+<details class="group rounded-lg border bg-white p-4 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                    What is a mortgage?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180"> expand_more </span>
+</summary>
+<p class="mt-2 text-base text-[var(--text-secondary)]">A mortgage is a loan used to purchase or maintain a home, land, or other types of real estate. The borrower agrees to pay the lender over time, typically in a series of regular payments that are divided into principal and interest. The property serves as collateral to secure the loan.</p>
+</details>
+<details class="group rounded-lg border bg-white p-4 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                    How much can I borrow?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180"> expand_more </span>
+</summary>
+<p class="mt-2 text-base text-[var(--text-secondary)]">The amount you can borrow, also known as your borrowing power, depends on several factors. Lenders will assess your income, credit score, existing debts, and the down payment you can afford. Our mortgage calculator can give you an initial estimate, and our loan officers can provide a detailed pre-approval.</p>
+</details>
+<details class="group rounded-lg border bg-white p-4 shadow-sm">
+<summary class="flex cursor-pointer items-center justify-between text-lg font-semibold text-[var(--text-primary)]">
+                    What are closing costs?
+                    <span class="material-symbols-outlined transition-transform group-open:rotate-180"> expand_more </span>
+</summary>
+<p class="mt-2 text-base text-[var(--text-secondary)]">Closing costs are fees associated with finalizing your mortgage. They typically range from 2% to 5% of the loan principal and may include appraisal fees, title insurance, attorney fees, and other expenses. We provide a detailed breakdown of estimated closing costs so you know what to expect.</p>
+</details>
+</div>
+</div>
+<div class="mt-20 text-center bg-white p-12 rounded-xl border border-gray-200 shadow-lg">
+<h2 class="text-3xl font-bold text-[var(--text-primary)]">Ready to Start Your Journey?</h2>
+<p class="text-lg text-[var(--text-secondary)] mt-4 max-w-2xl mx-auto">Have more questions or ready to take the next step? Reach out to our team of experienced loan officers for personalized assistance.</p>
+<button class="mt-8 h-12 px-8 bg-[var(--primary-color)] text-white text-base font-bold rounded-md hover:bg-blue-700 transition-colors">
+                Contact a Loan Officer
+              </button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

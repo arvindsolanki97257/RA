@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1791cf;
+      --secondary-color: #f0f8ff;--text-primary: #111827;
+      --text-secondary: #6b7280;
+      --border-color: #e5e7eb;
+    }
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+    .nav-link {
+      @apply text-gray-700 hover:text-[var(--primary-color)] transition-colors duration-300 text-sm font-medium;
+    }
+    .active-nav-link {
+      @apply text-[var(--primary-color)] font-bold border-b-2 border-[var(--primary-color)];
+    }
+    .btn-primary {
+       @apply bg-[var(--primary-color)] text-white hover:bg-opacity-90;
+    }
+    .btn-secondary {
+      @apply bg-gray-100 text-gray-800 hover:bg-gray-200;
+    }
+    .filter-btn {
+        @apply flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md border border-[var(--border-color)] bg-white px-4 text-sm font-medium text-[var(--text-primary)] hover:bg-gray-50 transition-colors duration-200;
+    }
+    .pagination-link {
+      @apply flex size-10 items-center justify-center rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors duration-200;
+    }
+    .pagination-link.active {
+      @apply bg-[var(--primary-color)] text-white hover:bg-[var(--primary-color)];
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="bg-white sticky top-0 z-20 w-full shadow-sm">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-10">
+<a class="flex items-center gap-2 text-[var(--text-primary)]" href="#">
+<svg class="text-[var(--primary-color)]" fill="none" height="28" viewBox="0 0 48 48" width="28" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tighter">FindHome</h1>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="nav-link" href="#">Buy</a>
+<a class="nav-link active-nav-link pb-3" href="#">Rent</a>
+<a class="nav-link" href="#">Sell</a>
+<a class="nav-link" href="#">Home Loans</a>
+<a class="nav-link" href="#">Find Agent</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex relative items-center">
+<span class="material-symbols-outlined absolute left-3 text-gray-500">search</span>
+<input class="form-input w-48 rounded-md border-gray-300 bg-gray-100 pl-10 h-10 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] focus:bg-white transition" placeholder="Search" value=""/>
+</div>
+<button class="btn-secondary flex min-w-[84px] items-center justify-center rounded-md h-10 px-4 text-sm font-bold tracking-wide transition-colors">
+<span class="truncate">Sign in</span>
+</button>
+<button class="btn-primary flex min-w-[84px] items-center justify-center rounded-md h-10 px-4 text-sm font-bold tracking-wide transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 bg-[var(--secondary-color)]/30">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+<div class="max-w-7xl mx-auto">
+<div class="mb-8">
+<h2 class="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight">Find Your Perfect Rental</h2>
+<p class="mt-2 text-lg text-[var(--text-secondary)]">Search thousands of rental listings to find your next home.</p>
+</div>
+<div class="bg-white p-4 sm:p-6 rounded-lg shadow-md mb-8 sticky top-[68px] z-10">
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<div class="md:col-span-3">
+<label class="sr-only" for="search-location">Search Location</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="form-input w-full rounded-md border-gray-200 h-12 pl-12 text-base focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition" id="search-location" placeholder="Search by city, neighborhood, address, or ZIP code" value=""/>
+</div>
+</div>
+<button class="md:col-span-2 btn-primary rounded-md h-12 text-base font-bold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">search</span>
+                    Search
+                </button>
+</div>
+<div class="flex flex-wrap gap-3 mt-4">
+<button class="filter-btn">
+<span>Price</span>
+<span class="material-symbols-outlined text-gray-500">expand_more</span>
+</button>
+<button class="filter-btn">
+<span>Beds</span>
+<span class="material-symbols-outlined text-gray-500">expand_more</span>
+</button>
+<button class="filter-btn">
+<span>Baths</span>
+<span class="material-symbols-outlined text-gray-500">expand_more</span>
+</button>
+<button class="filter-btn">
+<span class="material-symbols-outlined text-gray-500 mr-1">tune</span>
+<span>More Filters</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZf1nUdkbmLgqOJ6VkHB1HGdAMERezuVpHefe0R2ogJXzlP4b5ROiaERvkgzBulaGn2_-rk4MdBKfBztkSclF1zuQRffmqaERVWFnz6J2gHYgIgsbIo9iV2vxticSqCOAAVhxjFj_f_TcI8pq2juailTHm7R2KtJonQBNfin7grdpKVtVV3LY0l540ddxaJ6rt5_d3mgg1RuVxji2jiThpZjmyuv1O8gm8wFUATdGU_dLdhO_lm9COyBLI5O5jZOTBDZ1paai6Jbg");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-red-500 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,500/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">2 beds · 2 baths · 1,200 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">123 Maple Street, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDMMfSIgFEdH_32ivRGOS4EdgLS65sqvfGnPpFE-1MaWSzqFXtDiUWd2bBq_N8ac5QlKTMmD3E-TCEhPjfBM-PTIMW9wnUDzCNMsJ3XwGD8MB0NV97D_Bqr4YcujC6tmyPhvc2MvLiX4_AQWfXI3ncLx2qHnERFmjl42iWnANgK-zKr0SY0N5m8gAf43_KlAMIlcS_SYbNdmUHRIYDxsreb3wJOzkL0N5IAEFq8l8nMoWXa9RD6Tn41ufX_m6ycUVzFn0bgLbqRFg");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$3,000/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">3 beds · 2 baths · 1,500 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">456 Oak Avenue, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkzFyt89zKjnf5PQW1Rwha-qGgLrnb5AXMddDPNITkETJFFXnJ7k9jqBuDAxOgJuAqsgd79Oq5Bcp7P5RIHh_-rgEGOlX21lmiUxxtTv8z6cuexjNV6bk8etaJziB-wrxhzmXAsg7GmfNXfqWyiUxHut2fKSRQxoTt8cM9xky6UqWIk0aEkEekAenBFDw-o_n79I51f2BKYzC2DsYDWfUuY0zEKjz_AcjzCRU0q0vObC-vFBp05bkAEyLOw3f3-TkaulR2iad8m9I");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$1,800/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">1 bed · 1 bath · 800 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">789 Pine Lane, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCafEds6aYULvDZy-TE1lmpSbxrfLVckYHO2mkmShMxhg_AJiykT0Mj-4_Dna01zTTzKas8Cj24LkJvaMXDz5pROQ4lZvAdQZqqaaW4rBtO6Q7YiCPfPcGd1gVbwXEmG_RtD_llWaykkxqWMgtaDzgEWDGw7-NDAGnjk6OdcgcYXZiO5ZRraOFuV659MbOvVuQmsdbhmM75iNVb41GTtXARjuKnF4QABmcm2TJ6xqqMA51dFnmz4L1snOP4JsOOiHRbUwGnccOOCOE");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,200/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">2 beds · 1 bath · 1,000 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">101 Elm Street, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9Vo5rEVWwR6uiiKvMGUK_xW7646ZLwU0_QYkCk7nujo5TjlZb8kH86Ppi7_YeKvRgvKwXeam3w9b0RNZNAECozDQFatJVhIZnJB-RNKZi9jnCTn2UD1noDUuG39mJ1PFSFGKy5BIBnETiiqAL276HPwyOBus3NY01Q_nVQydG4HBQCN8XR3RvMGR-vh_vmhCVzrt5BTkciNL3wRvU_YDpMqB7_DLdDpSg3XQDpjE50IGK2WYvEXctpe_VuXUkzDyaMcijAG8FA0Y");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,800/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">3 beds · 2 baths · 1,400 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">222 Cedar Road, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE60g8fCZSVbiDLFtYWX60n0JByxNBi3OXs-14uhjHjEUr6BJtE1UUGG68q4ybROi7MpdXUdHGmIca_HPIZwizfwrxVywhKViFjBTcNtexODBiHkr4x2XeaJb5SrYv0JXfYza042BXRtN14Q6vuuRcvYnl1Rv5jCvN2VsfPAbZFHRA2-7Ob3HmL6mqaRmasz6A6i7--5iaPmz2D3i4IFJreVOes2rk788q0aZfYb_k7YfS4-4snq2o6Vx6DLL4Y3JFk5AdT7f7noc");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-red-500 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,000/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">1 bed · 1 bath · 900 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">333 Birch Court, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+
+
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZf1nUdkbmLgqOJ6VkHB1HGdAMERezuVpHefe0R2ogJXzlP4b5ROiaERvkgzBulaGn2_-rk4MdBKfBztkSclF1zuQRffmqaERVWFnz6J2gHYgIgsbIo9iV2vxticSqCOAAVhxjFj_f_TcI8pq2juailTHm7R2KtJonQBNfin7grdpKVtVV3LY0l540ddxaJ6rt5_d3mgg1RuVxji2jiThpZjmyuv1O8gm8wFUATdGU_dLdhO_lm9COyBLI5O5jZOTBDZ1paai6Jbg");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-red-500 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,500/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">2 beds · 2 baths · 1,200 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">123 Maple Street, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDMMfSIgFEdH_32ivRGOS4EdgLS65sqvfGnPpFE-1MaWSzqFXtDiUWd2bBq_N8ac5QlKTMmD3E-TCEhPjfBM-PTIMW9wnUDzCNMsJ3XwGD8MB0NV97D_Bqr4YcujC6tmyPhvc2MvLiX4_AQWfXI3ncLx2qHnERFmjl42iWnANgK-zKr0SY0N5m8gAf43_KlAMIlcS_SYbNdmUHRIYDxsreb3wJOzkL0N5IAEFq8l8nMoWXa9RD6Tn41ufX_m6ycUVzFn0bgLbqRFg");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$3,000/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">3 beds · 2 baths · 1,500 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">456 Oak Avenue, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkzFyt89zKjnf5PQW1Rwha-qGgLrnb5AXMddDPNITkETJFFXnJ7k9jqBuDAxOgJuAqsgd79Oq5Bcp7P5RIHh_-rgEGOlX21lmiUxxtTv8z6cuexjNV6bk8etaJziB-wrxhzmXAsg7GmfNXfqWyiUxHut2fKSRQxoTt8cM9xky6UqWIk0aEkEekAenBFDw-o_n79I51f2BKYzC2DsYDWfUuY0zEKjz_AcjzCRU0q0vObC-vFBp05bkAEyLOw3f3-TkaulR2iad8m9I");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$1,800/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">1 bed · 1 bath · 800 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">789 Pine Lane, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCafEds6aYULvDZy-TE1lmpSbxrfLVckYHO2mkmShMxhg_AJiykT0Mj-4_Dna01zTTzKas8Cj24LkJvaMXDz5pROQ4lZvAdQZqqaaW4rBtO6Q7YiCPfPcGd1gVbwXEmG_RtD_llWaykkxqWMgtaDzgEWDGw7-NDAGnjk6OdcgcYXZiO5ZRraOFuV659MbOvVuQmsdbhmM75iNVb41GTtXARjuKnF4QABmcm2TJ6xqqMA51dFnmz4L1snOP4JsOOiHRbUwGnccOOCOE");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,200/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">2 beds · 1 bath · 1,000 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">101 Elm Street, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9Vo5rEVWwR6uiiKvMGUK_xW7646ZLwU0_QYkCk7nujo5TjlZb8kH86Ppi7_YeKvRgvKwXeam3w9b0RNZNAECozDQFatJVhIZnJB-RNKZi9jnCTn2UD1noDUuG39mJ1PFSFGKy5BIBnETiiqAL276HPwyOBus3NY01Q_nVQydG4HBQCN8XR3RvMGR-vh_vmhCVzrt5BTkciNL3wRvU_YDpMqB7_DLdDpSg3XQDpjE50IGK2WYvEXctpe_VuXUkzDyaMcijAG8FA0Y");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-gray-400 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,800/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">3 beds · 2 baths · 1,400 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">222 Cedar Road, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+<div class="group flex flex-col bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+<div class="relative">
+<div class="w-full h-48 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDE60g8fCZSVbiDLFtYWX60n0JByxNBi3OXs-14uhjHjEUr6BJtE1UUGG68q4ybROi7MpdXUdHGmIca_HPIZwizfwrxVywhKViFjBTcNtexODBiHkr4x2XeaJb5SrYv0JXfYza042BXRtN14Q6vuuRcvYnl1Rv5jCvN2VsfPAbZFHRA2-7Ob3HmL6mqaRmasz6A6i7--5iaPmz2D3i4IFJreVOes2rk788q0aZfYb_k7YfS4-4snq2o6Vx6DLL4Y3JFk5AdT7f7noc");'></div>
+<div class="absolute top-2 right-2 bg-white/80 backdrop-blur-sm rounded-full p-1.5 cursor-pointer hover:bg-white">
+<span class="material-symbols-outlined text-red-500 !text-2xl">favorite</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-xl font-bold text-[var(--primary-color)]">$2,000/mo</p>
+<p class="text-base font-semibold text-[var(--text-primary)] mt-1">1 bed · 1 bath · 900 sqft</p>
+<p class="text-sm text-[var(--text-secondary)] mt-1 flex-1">333 Birch Court, Anytown, CA</p>
+<a class="mt-4 btn-primary text-center rounded-md py-2 px-4 text-sm font-bold" href="#">View Details</a>
+</div>
+</div>
+
+</div>
+<div class="flex items-center justify-center pt-12">
+<nav class="flex items-center gap-2">
+<a class="pagination-link" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="pagination-link active" href="#">1</a>
+<a class="pagination-link" href="#">2</a>
+<a class="pagination-link" href="#">3</a>
+<a class="pagination-link" href="#">4</a>
+<a class="pagination-link" href="#">5</a>
+<a class="pagination-link" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</nav>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

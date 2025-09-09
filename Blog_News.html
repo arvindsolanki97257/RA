@@ -1,0 +1,151 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta charset="utf-8"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1791cf;
+      }
+      .font-newsreader {
+        font-family: 'Newsreader', serif;
+      }
+      .font-noto-sans {
+        font-family: 'Noto Sans', sans-serif;
+      }
+    </style>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden font-noto-sans">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4">
+<div class="flex items-center gap-3 text-gray-800">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 text-xl font-bold font-newsreader">HomeFinder</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Buy</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Rent</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Sell</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Mortgage</a>
+<a class="text-gray-600 hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Find Agent</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-gray-100 text-gray-800 text-base font-bold leading-normal tracking-wide hover:bg-gray-200 transition-colors">
+<span class="truncate">Sign in</span>
+</button>
+<button class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-5 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-wide hover:bg-opacity-90 transition-colors">
+<span class="truncate">Sign up</span>
+</button>
+</div>
+</header>
+<main class="px-40 py-12">
+<div class="layout-content-container flex flex-col max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-12">
+<h1 class="text-gray-900 text-6xl font-bold font-newsreader tracking-tight leading-tight">Our Blog</h1>
+<p class="text-gray-600 text-xl mt-4 max-w-3xl">Your source for real estate news, homeownership tips, and local community insights.</p>
+</div>
+<div class="flex justify-between items-center mb-8 px-4">
+<div class="relative flex-1 max-w-md">
+<div class="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-500">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full rounded-md border-gray-300 bg-white h-12 placeholder:text-gray-500 pl-12 pr-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)]" placeholder="Search blog posts..." value=""/>
+</div>
+<div class="flex gap-3 flex-wrap">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-100 hover:bg-gray-200 px-4 text-gray-700 hover:text-gray-900 text-sm font-medium leading-normal transition-colors">Market Trends</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-100 hover:bg-gray-200 px-4 text-gray-700 hover:text-gray-900 text-sm font-medium leading-normal transition-colors">Home Improvement</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-100 hover:bg-gray-200 px-4 text-gray-700 hover:text-gray-900 text-sm font-medium leading-normal transition-colors">Neighborhood Guides</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-100 hover:bg-gray-200 px-4 text-gray-700 hover:text-gray-900 text-sm font-medium leading-normal transition-colors">First-Time Buyers</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-md bg-gray-100 hover:bg-gray-200 px-4 text-gray-700 hover:text-gray-900 text-sm font-medium leading-normal transition-colors">Selling Tips</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3Glxlj-ZoqNl8aHoFCWREHMQA8yN193ERhx0vc3Jp8JdLdp9i_hF3K_L-vkH36G7lw6nR7NpYNOEHiMHnkb7CGQkOmhYpx1OkVtIbgZyjDcdTJ8tbeI3WIn2zwXo9_B6lrCN1JZL28qm2kjuWzhUaYNvyspRbdlGLrsOrG3i6rODcQ8nkbWYeeNB0JCT14KWW95Dm4NxReTnV7ZzDO_MPNtLK_UoTEqWKgVp9Dt2v8q8N0HgLT9LCQ2VOkEbrXMNjuj0oeUoajEY");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">The Impact of Interest Rates on the Housing Market</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">Understanding how interest rate changes affect property values and buyer behavior.</p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWqjFa7xIH1x3wUSLNXLAEHhCGJPSuaPaE6-pS8qXRbhXNOzxfcj7BlzPcx4KgFbFy6v0M30dJ3rxqGXn5r0PqB5mWRrSvplG8xF3NrWmi5SyG88329dq_2O-TGTtM2p7Cvyb81NckPE6YfyCV0TioaFtT70jmsleWDDeV3jZHVA7i5rhQGhhoJgV4uo5yT6LjI5Ge5xTmbg6WpmHE_tuG_EyVsBiONcm-s7hg1V5ebHkfnQLQTE7CSghfZ-Zq909YIflEN-VfGFY");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">Top 5 Home Renovation Projects for Increased Value</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">Discover the most effective renovation projects that offer the best return on investment.</p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCt8CbmT-4frWxkwwRSDRE7gaMfeoSKEM8BQIrqp3QtaK4M9LKlMU5gvtFqlkeRmUq2DPhpu5JXzBT9j9O2BOuhCdGQ-3jbx90c9qTk1beX2h3J5USxEAyrjjx6DIZXE5SnJTcv265yTAQXn0mElOpnD_eWXvsluV7LQFbJgPEcDDt3eFs-3s8XBjuEFq5cRLGtX1Scq4oPN9MCP7v5ShsGphpUmqtIDhUXrntkoUtOaI69Md3Jg_Iy0d6eCCKZCIoJdaakyvquHQ4");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">Exploring the Charm of Willow Creek: A Neighborhood Guide</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">A comprehensive guide to the amenities, lifestyle, and real estate options in Willow Creek.</p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-GUKpxVBHeuF-Ng1jNPG3OyA127-vnzK0vWBvRa561MVwHSFfHj_6uOmxo6GX6zw6VVmwJxScOvV5WH3JU-zZ5iC5EAp5sO3zgTronOsNJ_lTvSPZ3CK3LPIBjqg_WSjkifZ9R1AJY6TIhoj8jyG1htEtlxs31ysvyU7nVzo85YhaE3kw_3Kjvg5fMLpY0hf9-n8sIU38v5k1EQakNgZ0yhLpXTzkyLiGJko8pi57PgCjr0HTvYhfws4VcyDP6MU1a0F0aSSgDlY");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">Navigating the Home Buying Process for First-Time Buyers</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">A step-by-step guide for first-time homebuyers to successfully purchase their dream home.</p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrr9YtbsIAOG-EEJmIq6ZD6ar-OoM6CY5AxnnAh0n1eeOrhbk7kACHwFs3yZ1p8hYgjxD-5T4qknJ_yraTxr1qmM72ryeYIBFAPsWOKmcUwaJpqfrNYZnFUtI-SyHprlg1el9mqGEan-rcEFFcZKd8LVZ6xAnxtQfpGyQMhum5Zhzx7wo8vlGNV5XQKkTnf5zw_gV8iYXB2jeoXQ-nHOb8tfLaR2RA47gVglNJJ8AWP97Tb3pnQxhmYQ80LVr6A9WRUUlP1pVL7tQ");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">Maximizing Your Home's Appeal: Essential Selling Tips</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">
+                    Expert advice on preparing your home for sale to attract potential buyers and achieve a higher sale price.
+                  </p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtX_O1uK4i0S7fB2fGg5jI-5y5y9rA4n4R3tQ0v7t5p5K3v4z4y7f6z5t5u3y4x2z1w0q9v8u7t6s5r4p3o2n1m0l9k8j7h6g5f4e3d2c1b0a9z8y7x6w5v4u3t2s1r0q9p8o7n6m5l4k3j2h1g0f9e8d7c6b5a4z3y2x1w0v9u8t7s6r5q4p3o2n1m0l9k8j7h6g5f4e3d2c1b0a9z8y7x6w5v4u3t2s1r0q9p8o7n6m5l4k3j2h1g0f9e8d7c6b5a4");'></div>
+<div class="p-4 flex flex-col flex-1">
+<h3 class="text-gray-900 text-xl font-bold font-newsreader leading-snug mb-2">Understanding Local Zoning Laws and Regulations</h3>
+<p class="text-gray-600 text-base leading-relaxed flex-1">
+                    A breakdown of common zoning laws and how they can impact your property and future development plans.
+                  </p>
+<a class="text-[var(--primary-color)] font-semibold mt-4 self-start hover:underline" href="#">Read More ?</a>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 mt-8">
+<a class="flex size-10 items-center justify-center rounded-md hover:bg-gray-100 transition-colors" href="#">
+<div class="text-gray-600" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+<svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+</div>
+</a>
+<a class="text-base font-bold leading-normal flex size-10 items-center justify-center text-white rounded-md bg-[var(--primary-color)]" href="#">1</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-600 rounded-md hover:bg-gray-100 transition-colors" href="#">2</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-600 rounded-md hover:bg-gray-100 transition-colors" href="#">3</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-600 rounded-md hover:bg-gray-100 transition-colors" href="#">4</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-600 rounded-md hover:bg-gray-100 transition-colors" href="#">5</a>
+<a class="flex size-10 items-center justify-center rounded-md hover:bg-gray-100 transition-colors" href="#">
+<div class="text-gray-600" data-icon="CaretRight" data-size="18px" data-weight="regular">
+<svg fill="currentColor" height="18px" viewBox="0 0 256 256" width="18px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</div>
+</a>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
