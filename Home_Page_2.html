@@ -1,0 +1,485 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden" style='font-family: Newsreader, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-2 text-gray-800">
+<span class="material-symbols-outlined text-3xl text-sky-600"> real_estate_agent </span>
+<h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-tighter">UrbanNest</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium leading-normal" href="#">Buy</a>
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium leading-normal" href="#">Rent</a>
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium leading-normal" href="#">Sell</a>
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium leading-normal" href="#">Mortgages</a>
+<a class="text-gray-600 hover:text-gray-900 text-base font-medium leading-normal" href="#">Find an Agent</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4">
+<label class="hidden lg:flex flex-col min-w-40 !h-11 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-md h-full">
+<div class="text-gray-400 flex border-none bg-gray-100 items-center justify-center pl-4 rounded-l-md border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-gray-800 focus:outline-0 focus:ring-0 border-none bg-gray-100 focus:border-none h-full placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-11 px-6 bg-gray-100 hover:bg-gray-200 text-gray-800 text-base font-bold leading-normal">
+<span class="truncate">Sign in</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-11 px-6 bg-[#1791cf] hover:bg-[#147ab3] text-white text-base font-bold leading-normal">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative min-h-[600px] flex items-center justify-center bg-cover bg-center" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA0fykLCuf5g129m-g2iQDiRB4nLpPJVaZqgjKZ9DpXBz-BG9Utk620TM8ukiKe0dxaP7HWb3DPDCp01osbisMJ2m4wRFmZi0v6s4_-C0i-yJ1kpiiSXvK0BEJJ0GXW1b9aDJXQA0J5wUVeegTbd5u6toNmvz3afzJIrV1LKFL8e_zofKX0atyyng7j8GjuWDcxMkg9rk_V6k8otq9LLlOkMjOCpUBRN55EWvD3Lv8Bh7dqWfg-R5BKMwTawTbUL9Z0wb93h7zXQyQ");'>
+<div class="text-center text-white p-8 max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-4">Find Your Place With Us</h1>
+<p class="text-lg md:text-xl font-light mb-8">Search millions of homes for sale and rent across the United States.</p>
+<form class="max-w-2xl mx-auto">
+<div class="flex items-center bg-white rounded-full shadow-lg overflow-hidden">
+<span class="material-symbols-outlined text-gray-400 pl-6"> search </span>
+<input class="w-full h-16 px-4 text-gray-700 placeholder-gray-400 focus:outline-none" placeholder="Address, neighborhood, city, or ZIP code" type="text"/>
+<button class="bg-[#1791cf] hover:bg-[#147ab3] text-white font-bold h-16 px-8 rounded-r-full" type="submit">Search</button>
+</div>
+</form>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-3xl font-bold text-gray-900">New Listings</h2>
+<a class="text-[#1791cf] font-semibold hover:underline" href="#">View all</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7-wK4P_ziEOyYhMubieqJsDXggX66rE-sBOxjWFwfzumvFiJ5n_e2MGqffcwGyMyhr0OshId7M4n0h006omE6Om47yEyB3UxZQ-VT7bMWK9TXmK8DCw1hdHu85PklBIhl0410BdX7tfvh-4hKdTnG1ixRNlutA1mzvq6Gbjl5avkCJZGu1wNtN43CrofJbcJ4bEGsO6H5lS1yv9EFJF1qGQe4NkNN1bgfERElqQYpZsRcMV4aD8q7lAJh6eYVaOuB_9TCnC7QN3c");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Charming 3-Bedroom Home in Willow Creek</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">$450,000 | 3 Beds | 2 Baths | 1,800 sqft</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5h4mXfpsGkhploSh7jGji8ekVDL4qDUQz_MoQ88qJYuWjGqt0OKN06TXw5LrlOfb4AIV0EAF50z9LJDLIKF1Pt4Mt4A96gak4vB0iSAXczL7I4pJb4b7tRp5boZpRyueVSk9IWkmMeTiciaxtJFN-nFHt1mtm6wOmMHsKtJuE2jS802n4eIki8nQY-cpOlgRCmxFxlsxF2ufnXJOmekrabaDi2DUNHAJ9mgUnpSIP2TgKzbzPkW72cAQ1t-KdVWXN4mega_o4tAg");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Spacious 4-Bedroom House with a Pool</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">$750,000 | 4 Beds | 3 Baths | 2,500 sqft</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAK6gjGX5_yb6hC0HloKswA35xaXnshxYK7SjqET68W-HGfUclndktfTsKnMTwxrgaIkJMJfnuRDtE6ERR4vuLAuekMZngILh7h4znk3elLW5EnwERIWqqX2VYOeboyFEotSyvRCeYvmrcJPseJJftljhOgtDvJgwHVKCI64MUdHcz5W1P2RI3mXjFjs87fzy6WPsGeh-4mlS6ccmo6hIjWJ7Ah1WnrDICIaZV8_iZg1OuukdQhEe4bNZ-GL8rrRK-aymkskTjU7rk");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Cozy 2-Bedroom Apartment in Downtown</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">$300,000 | 2 Beds | 1 Bath | 1,000 sqft</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHeo4hlxVS_5rpBmaD6k8NjDF0aBCb5AxuFe96ByD6A-y-GoAG_uw1Ufg4iwZ3ypKm5IFvPPv923f0LmZ4T9fPuL1wMQ2vjvacNY5N9WvDupUmuyJXc3fb0ejg0HxEU2VnX1HltIX_TbytS_7i818aFrYxCnXVorqaYCki7UYk92cCK913IfzrS8ldB627-5-xgqj0xfh-hAmKchN5s72Cx67pq-ZC3gVI67hkr8wIvfEuR2jmLZHBE_2M29apVI3PtoHbluqg9Ak");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Luxurious 5-Bedroom Estate with Ocean Views</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">$1,500,000 | 5 Beds | 4 Baths | 4,000 sqft</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-gray-50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Market Trends</h2>
+<p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Stay informed with the latest real estate market data and insights for your area.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+<div>
+<h3 class="text-2xl font-bold text-gray-900">Citywide Market Overview</h3>
+<p class="text-gray-500">Data for the last 12 months</p>
+</div>
+<div class="flex gap-2 mt-4 md:mt-0">
+<button class="px-4 py-2 rounded-full text-sm font-semibold bg-[#1791cf] text-white">Average Price</button>
+<button class="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200">Sales Volume</button>
+<button class="px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-gray-700 hover:bg-gray-200">Days on Market</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+<div class="text-center p-4 rounded-lg bg-gray-50">
+<p class="text-gray-500 text-sm font-medium">Median Home Price</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">$580,500</p>
+<div class="flex items-center justify-center gap-1 mt-1 text-green-600">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+<span class="text-sm font-semibold">5.2% YoY</span>
+</div>
+</div>
+<div class="text-center p-4 rounded-lg bg-gray-50">
+<p class="text-gray-500 text-sm font-medium">Homes Sold</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">1,234</p>
+<div class="flex items-center justify-center gap-1 mt-1 text-red-600">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+<span class="text-sm font-semibold">2.1% YoY</span>
+</div>
+</div>
+<div class="text-center p-4 rounded-lg bg-gray-50">
+<p class="text-gray-500 text-sm font-medium">Avg. Days on Market</p>
+<p class="text-3xl font-bold text-gray-900 mt-1">35</p>
+<div class="flex items-center justify-center gap-1 mt-1 text-green-600">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+<span class="text-sm font-semibold">10% YoY</span>
+</div>
+</div>
+</div>
+<div class="h-96 w-full">
+<svg class="w-full h-full" fill="none" height="100%" viewBox="0 0 800 400" width="100%" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#e5e7eb" stroke-width="2" x1="50" x2="750" y1="350" y2="350"></line>
+<line stroke="#e5e7eb" stroke-width="2" x1="50" x2="50" y1="50" y2="350"></line>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="20" y="355">0</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="20" y="255">250k</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="20" y="155">500k</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="20" y="55">750k</text>
+<path d="M 50 300 C 150 250, 200 150, 300 180 C 400 210, 450 280, 550 260 C 650 240, 700 200, 750 220" fill="none" stroke="#1791cf" stroke-width="4"></path>
+<path d="M 50 350 L 50 300 C 150 250, 200 150, 300 180 C 400 210, 450 280, 550 260 C 650 240, 700 200, 750 220 L 750 350 Z" fill="url(#trend-gradient)"></path>
+<g>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="100" y="370">Jan</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="220" y="370">Apr</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="340" y="370">Jul</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="460" y="370">Oct</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="580" y="370">Jan</text>
+<text fill="#9ca3af" font-family="sans-serif" font-size="12" x="700" y="370">Apr</text>
+</g>
+<circle cx="750" cy="220" fill="white" r="6" stroke="#1791cf" stroke-width="3"></circle>
+<defs>
+<linearGradient id="trend-gradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" style="stop-color:#1791cf;stop-opacity:0.3"></stop>
+<stop offset="100%" style="stop-color:#1791cf;stop-opacity:0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-white">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Featured Agents</h2>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+<span class="material-symbols-outlined"> chevron_left </span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600">
+<span class="material-symbols-outlined"> chevron_right </span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+<img alt="Agent Photo" class="w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfGRE9FsqwOg8Kd6GMTr-ap-GIQL13E_cf19VH2YyxVC5fbcDz1EVC60aIUCBTslwxrO4oe4lFQ__DoaKXuTifcI2qS-ryM6lgy8O4bIQfqZCapLNzP3YOq_a9F5rC8PNKfPaCP8uanzZRHg7u7w4C_nnz8Q5RuSJFfDakOU2EZzYR-Qru5DJK3KDrV_ntGMm7R2cBmM-_-LqfCwG2MCPgUAqavJs6Yv0pCe6pEfoFeamFR9-o0BMBtww-71jot4Zp2vGR9WdKR1M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">James Peterson</h3>
+<p class="text-sky-300 font-semibold text-sm">Top Seller</p>
+<a class="mt-4 inline-block text-white font-semibold hover:underline" href="#">View Profile →</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+<img alt="Agent Photo" class="w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt2XZMXpWwCgeGuqTg7IrkAqRL_KDmx5lgakmrR9iipKFjLKuFI0HeGLOPkQ6iWnMK2lqnxKQlwJVSqpylHa-m9gWBYOKKt1TQr88aFwGGKG2pAbfD4xC5wWJ9bmOEvN3A0wkRuK2rezCwAnEp35p350l7tcLhTq0I9WzdNBpUPmXLocNl2vQKWR7OoPwPej5SkgXizhWztqPvEnDAv5B3d9PIUG_i_UallLSozx81J1wGbbamSrdswUYxAaAFSfB2I3FWbZ86bXw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">Maria Rodriguez</h3>
+<p class="text-sky-300 font-semibold text-sm">Luxury Specialist</p>
+<a class="mt-4 inline-block text-white font-semibold hover:underline" href="#">View Profile →</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+<img alt="Agent Photo" class="w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZhas8pzJ9y_OvFZ3PZ6GGLLvBzlsX9brm2gPVYvOsISyOlEPXvNG72WdpQMhKq-u95qweEBLGX6qqG0hNbJl_z1wHA0kd1lPS5LMxUEPFoabaTmuUK9nIhvxUyt-eMjGg5kxChvaU1VOfFs8gz2U-tqZ7Fm6NitmtDn5iVOT5NOCqBmfL0xgNbzHLU2qzZG3a9vRRhgvUMRYrsnW6MSn-sXJ3HTuFTbNQbUZLwv8zre1rMlE8-O81-pbsxNIMFbPmP5eoYGSypM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">David Chen</h3>
+<p class="text-sky-300 font-semibold text-sm">Top Renter</p>
+<a class="mt-4 inline-block text-white font-semibold hover:underline" href="#">View Profile →</a>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+<img alt="Agent Photo" class="w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCArVyrfqkDGSFCLq5qc7S50AzLaUHr7fqYZppqyy6emUAixVvIkGxRsqfYw14EZPY24Hp9U_bEtYf34uzBIXSekkf_9SqGiaxqf-We4U7wM3zCKIhhVEQvaAs_eXBt4YYROkzqTeAjBuY2G6axj0BSubRlgbWoq-9XRLsJDP9112yO-HHj_4-IgRlI6z-o5HRT9KUJUYZwRsCHoJHPDSRFikmC5kia7auYS8_FScJDDUainmP7cwYr9_QAU_kFvpbZoH5VdkORcTw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white">Emily White</h3>
+<p class="text-sky-300 font-semibold text-sm">Rising Star</p>
+<a class="mt-4 inline-block text-white font-semibold hover:underline" href="#">View Profile →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-gray-50 py-20 px-4 md:px-10">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900">Neighborhood Guides</h2>
+<p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Explore the best neighborhoods to live, work, and play. Our guides provide a deep dive into local life.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<div class="relative h-64 w-full">
+<img alt="Downtown Skyline" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://picsum.photos/id/1012/800/1200"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-2xl font-bold text-white">Downtown</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-gray-600 mb-4">The vibrant heart of the city, offering a bustling atmosphere with endless entertainment and dining options.</p>
+<div class="flex justify-between items-center mb-4 text-sm text-gray-700">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> restaurant </span>
+<span>100+ Restaurants</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> local_cafe </span>
+<span>50+ Cafes</span>
+</div>
+</div>
+<a class="font-semibold text-[#1791cf] hover:underline" href="#">Explore Guide →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<div class="relative h-64 w-full">
+<img alt="Riverside Park" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://picsum.photos/id/1015/1200/800"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-2xl font-bold text-white">Riverside</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-gray-600 mb-4">A peaceful, family-friendly area with beautiful parks and scenic river views, perfect for outdoor enthusiasts.</p>
+<div class="flex justify-between items-center mb-4 text-sm text-gray-700">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> park </span>
+<span>5 Large Parks</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> directions_bike </span>
+<span>20km Bike Trails</span>
+</div>
+</div>
+<a class="font-semibold text-[#1791cf] hover:underline" href="#">Explore Guide →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+<div class="relative h-64 w-full">
+<img alt="Maplewood Suburbs" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://picsum.photos/id/1018/1200/800"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-2xl font-bold text-white">Maplewood</h3>
+</div>
+</div>
+<div class="p-6">
+<p class="text-gray-600 mb-4">A charming suburban neighborhood with top-rated schools and a strong sense of community.</p>
+<div class="flex justify-between items-center mb-4 text-sm text-gray-700">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> school </span>
+<span>A+ Rated Schools</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-[#1791cf]"> family_restroom </span>
+<span>High Livability</span>
+</div>
+</div>
+<a class="font-semibold text-[#1791cf] hover:underline" href="#">Explore Guide →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-gray-50">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-center mb-8">
+<h2 class="text-3xl font-bold text-gray-900">Upcoming Open Houses</h2>
+<a class="text-[#1791cf] font-semibold hover:underline" href="#">View all</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBC9VfFakvqKpXGrULU2ogz5F3E2wXbGGS_nxzZbwKqaO7GdIjmI1_kCNac6f6UY9HOyhOsqAqM_5su69cPT-CmCh3aC92_Xe-vyWU13fPdz_QKS95qJEz1OuP_WZaSDT8l7_N1IGc74IttUkG6kc4gsNMbXaM1Zw3c8v02LA-hjpkq5W-fFA0UsGzRA_rL18rJuiBhn4sPsAShTJw0NZwZno0fbQUdIaIETtL0rSugts7bHeRpsGshIWaQa1sQsnwPsQLw5gSrnZY");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Open House: 3-Bedroom Home in Willow Creek</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Saturday, 10 AM - 2 PM</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8qXJIjFuTbYZSYqQ2SADTLU4KnwAduSjuRitiqIUpRvLsMVclQU3TnE0w3YlopXM50Je50gSmGx08ZdW1OsahY1KxsNAqDfQ1LP9c90NC_kLEh2C13cHAVF_moAC0rW9zEblfnoSS7QBYUeMh_dMo_VdwHRwW-xQvUzIKNo0WXbfkurttmicyfFz4VqHsXiWe3nAA78UUd4sH793tUzTyBTddMSLB8gAzfTig_tHErT6-6xUCCA8taEkeQ03_8J5goAbS7knrLvA");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Open House: 4-Bedroom House with a Pool</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Sunday, 1 PM - 4 PM</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTcYO-xV0HgaknyZpdq_fQKRj2BGj9LYJF4NLpn8OEgkWmozoi_9x2YdRfWXTSfcGgIMPS5Ta2BAS1CKgrkoNgRddigivrEkyu30VoPCKtIFL4TfYQL72ywApMCVkLACqTpY-oRXfEr0PjI6Bu16-V4iRlcllkd6_s8p5cyNgwDnKQxRSPjC63ZQMkI2OZN1sC2844aorVW3RHqd4iReSyeHM3rbJXkvxJo9EDV66T7IQzTWPx6yFb4EfVkfdp3nCpynDwuQjexUo");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Open House: 2-Bedroom Apartment in Downtown</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Saturday, 11 AM - 1 PM</p>
+</div>
+</div>
+<div class="flex h-full flex-1 flex-col gap-4 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBi06MiU5yxNcsodaq8SacUD2keC83qRttmZRKM1uD-jHWajemukETre-FVFaR-O9nij-4R6sSdolMGeeBODU2w96AMKOQvpcPBNMJz5GmM_wvB2Xww6wgMKR8mN5mPkRdH574itXK7TeR3_1Mc17fRoj2JUeoeZEqUlU-0xaQQh6QXe82C5m9Ry8T6oi1NCCrqPFthF3JpNhaEdgwcgBVROu3UibPU3k_BkB8CEV04rtjsWb5yILTHuOqos3S7EVG4wqZwZLafIO4");'></div>
+<div class="p-4">
+<p class="text-gray-900 text-lg font-semibold leading-normal">Open House: Luxurious 5-Bedroom Estate</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Sunday, 2 PM - 5 PM</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-gray-50">
+<div class="max-w-7xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Find Your Dream Home With Us</h2>
+<p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+                Our platform offers a comprehensive suite of tools and resources to help you find the perfect property.
+              </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center gap-4 p-8 rounded-lg bg-white shadow-sm hover:shadow-lg transition-shadow">
+<div class="bg-[#1791cf]/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl text-[#1791cf]"> home_work </span>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Extensive Listings</h3>
+<p class="text-gray-600">Browse thousands of properties for sale and rent across the country.</p>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 rounded-lg bg-white shadow-sm hover:shadow-lg transition-shadow">
+<div class="bg-[#1791cf]/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl text-[#1791cf]"> search </span>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Advanced Search</h3>
+<p class="text-gray-600">Filter by price, size, location, and more to find exactly what you need.</p>
+</div>
+<div class="flex flex-col items-center gap-4 p-8 rounded-lg bg-white shadow-sm hover:shadow-lg transition-shadow">
+<div class="bg-[#1791cf]/10 p-4 rounded-full">
+<span class="material-symbols-outlined text-4xl text-[#1791cf]"> group </span>
+</div>
+<h3 class="text-xl font-bold text-gray-900">Expert Agents</h3>
+<p class="text-gray-600">Connect with experienced real estate professionals who can guide you.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-gray-900 text-center mb-12">What Our Clients Say</h2>
+<div class="space-y-12">
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<img alt="Sophia Carter" class="w-16 h-16 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUEJAk5QxPlp-9SKyqrZA6nCVG03vf6j1UbZvt9n8Tq97NyTCfs8aoU1Ob9JJigQINrky2G_jrgtvuD5TjADYiZslr8ZLo9V9fnGtbw52VfIaklGR2GE1LqEL817Nfu93uhR02dE4hPnYbOymAuhsaasqKdRXdG0gcCZj5JVHPOF4b4ikhtItw86gRjIpZC8vcmqK3BEmygDDsEH3AfCzuGyWtRQhyFbFCCoVHwnZjf_JJwxB7DIHoHTNOQri9aB8BLD4SSv1q2JM"/>
+<div class="flex-1">
+<div class="flex items-center gap-1 text-yellow-500 mb-2">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-gray-700 italic text-lg mb-4">
+                      "I had a fantastic experience finding my new home with UrbanNest. Their agent, Sarah, was incredibly helpful and knowledgeable."
+                    </p>
+<p class="font-semibold text-gray-800">Sophia Carter</p>
+<p class="text-sm text-gray-500">Home Buyer</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<img alt="Ethan Bennett" class="w-16 h-16 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe2TfoqGe1SLvWPJO53V3NDYOTww7CElLhf3mO-GyJLt53VYqYl3jRDYHLinEbvzWpwSJ_CSGawl7Izvv7iEZuwzv8ndP7cZcdHYDAlviTJMQt5RImeKaBp90qylT0itwUx1zNngTwS9lZkHqVjNh4LlHK-qQGLgTapmsjsJ37oa-F-xiQ9r8BbG8mohctO3NJsA-n8kDXg2tujo2G4NLeIT2ru_Jsm6Wcaig4W3CulPGoFUNrcfhGX20CCgqbZPbqDKGZFgTW-2c"/>
+<div class="flex-1">
+<div class="flex items-center gap-1 text-yellow-500 mb-2">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-gray-700 italic text-lg mb-4">
+                      "The search tools on UrbanNest are top-notch. I was able to find a property that met all my criteria quickly and easily."
+                    </p>
+<p class="font-semibold text-gray-800">Ethan Bennett</p>
+<p class="text-sm text-gray-500">Renter</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-start gap-6">
+<img alt="Olivia Hayes" class="w-16 h-16 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfeHW4LULpx_-ABwIBMIT-XvyxsgBzVmAdKkGJG9Xy8Z1mmEEn5ZptUIyyOtngcxWfjC0EPGAH4mSSiRivNqrhLCQsxhR9soGrm_Adzwplrg44u8iiJ2LouTf9bXOjV8ufzaWbvem_Ro-UG0X-A14EhKVgC6Q-7oU951K_bBJxSX9-dhW5ee9asrSd0ucio-15JGSJYH8gwKGRCftmTInbxeySR082AymylS6n2LCYu4ZqZe9aaM-K0BgyNQvkEU0McF0mT4K-1DI"/>
+<div class="flex-1">
+<div class="flex items-center gap-1 text-yellow-500 mb-2">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-gray-700 italic text-lg mb-4">
+                      "UrbanNest made the process of buying my first home so much smoother. Their resources and support were invaluable."
+                    </p>
+<p class="font-semibold text-gray-800">Olivia Hayes</p>
+<p class="text-sm text-gray-500">First-time Home Buyer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[#1791cf] text-white py-20 px-4 md:px-10">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl font-bold mb-4">Ready to Find Your New Home?</h2>
+<p class="text-lg mb-8">Sign up today and start your search with the best real estate platform.</p>
+<button class="bg-white text-[#1791cf] font-bold py-3 px-10 rounded-full text-lg hover:bg-gray-100 transition-colors">
+                Get Started
+              </button>
+</div>
+</section>
+</main>
+<footer class="bg-gray-800 text-gray-400">
+<div class="max-w-7xl mx-auto py-12 px-4 md:px-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+<div>
+<h3 class="font-bold text-white mb-4">Company</h3>
+<ul>
+<li><a class="hover:text-white" href="#">About Us</a></li>
+<li><a class="hover:text-white" href="#">Careers</a></li>
+<li><a class="hover:text-white" href="#">Press</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-white mb-4">Explore</h3>
+<ul>
+<li><a class="hover:text-white" href="#">Buy</a></li>
+<li><a class="hover:text-white" href="#">Rent</a></li>
+<li><a class="hover:text-white" href="#">Sell</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-white mb-4">Support</h3>
+<ul>
+<li><a class="hover:text-white" href="#">Help Center</a></li>
+<li><a class="hover:text-white" href="#">Contact Us</a></li>
+<li><a class="hover:text-white" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-white mb-4">Connect</h3>
+<div class="flex gap-4">
+<a class="hover:text-white" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="hover:text-white" href="#"><span class="material-symbols-outlined">group</span></a>
+<a class="hover:text-white" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 text-center text-sm">
+<p>© 2023 UrbanNest. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
