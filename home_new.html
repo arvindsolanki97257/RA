@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 py-3">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="text-primary size-7">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">PropertyCo</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-9">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Buy</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Rent</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Sell</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">About Us</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<div class="relative">
+<div class="flex min-h-[560px] flex-col items-center justify-center gap-8 bg-cover bg-center bg-no-repeat p-4 text-center" data-alt="Luxurious modern house with a pool at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBvGolk4mE8EGkTvhWUxXPED1NNX_SgHtSx1nWuHg1vrihYFZd2ccGD9RuQiTr_WaZaGFagNl8Cj0nzNf3M17rvFSqDY8yAOCcZStIOldyY9VbD6pxsxTylm1HQf-XVx18NDG2YurFcEgjt4YgPaf0zR68-9Co2sEfqObeyaDQRu_c5b76OOIASiGTV8bjwCNWXrSiELUtRsA5_BC8DyQaOHqeQhn1J8hmCsuapl7otKm7KyPx5XQDvf8N58OlKgW9RfskzfvrZ9rE");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-6xl">Find Your Dream Home</h1>
+<p class="text-white/90 text-lg font-normal leading-normal max-w-2xl">Search through the most luxurious properties and find your new home with PropertyCo.</p>
+</div>
+<div class="w-full max-w-4xl p-4 bg-white/10 backdrop-blur-md rounded-xl shadow-lg border border-white/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+<div class="flex flex-col items-start">
+<label class="text-sm font-medium text-white mb-1" for="location">Location</label>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-primary border-0 bg-white h-12 placeholder:text-slate-500 px-4 text-base font-normal leading-normal" id="location" placeholder="e.g. New York City" value=""/>
+</div>
+<div class="flex flex-col items-start">
+<label class="text-sm font-medium text-white mb-1" for="property-type">Property Type</label>
+<select class="form-select flex w-full min-w-0 flex-1 rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-primary border-0 bg-white h-12 px-4 text-base font-normal leading-normal" id="property-type">
+<option>Buy</option>
+<option>Rent</option>
+</select>
+</div>
+<div class="flex flex-col items-start">
+<label class="text-sm font-medium text-white mb-1" for="price-range">Price Range</label>
+<select class="form-select flex w-full min-w-0 flex-1 rounded-lg text-slate-900 focus:outline-0 focus:ring-2 focus:ring-primary border-0 bg-white h-12 px-4 text-base font-normal leading-normal" id="price-range">
+<option>$500k - $1M</option>
+<option>$1M - $2M</option>
+<option>$2M - $5M</option>
+<option>$5M+</option>
+</select>
+</div>
+<div class="flex flex-col items-start pt-6">
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Search</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-4 py-16">
+<!-- Featured Properties Section -->
+<div class="mb-12">
+<h2 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-6 pt-5 text-center">Featured Properties</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A modern villa with a sleek design and large windows" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKZi_j5DkNFj4K7-5oI3fzqN6sAzMUCeUa6BTrswtySRZRQ3gqJ2Z1byxHRDNdT-lK9HHYkZjcljUKZgmAz8sGbUQmCptX_x1qXKrckLmko4YBY3SozKpe7wDo8YLzbNdGq8QGCzGFd9xWha8Oq0UIx4gPzUEFzZdMUB5wtztsTzfE0qc4vDPOeau8l6PeRM-YBcPL0aQ2XSOSK_gN9CgzA0yAcemXt6-_6q6VSEKoZbHzrCO0UdNqmWn9o9ycy8EKcSP1aIXUHUmX");'></div>
+<div class="p-4">
+<p class="text-lg font-bold">Modern Villa</p>
+<p class="text-primary text-base font-medium leading-normal">$1,200,000</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">4 Beds, 3 Baths, 3,200 sqft</p>
+<a class="text-primary text-sm font-semibold mt-2 inline-block" href="#">View Details →</a>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A charming suburban family home with a green lawn" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZgfAyfIiA0hnXUx9kpKJ7Y5PNFzXXpvW7pTnfQbLUFpjV6m3G5QyGxVqk8V7EuEHz6EDG61qgIpD_snu050lXtLItObk79WtbJuxj-gMU1Mb73gWdaSnfquWUnQjoB3yBHNEmmAZUbbyvDEtGhuvY1aGiD63o6xoYAd-Bdi7R91FM6brBzcqmiVJ_ikX4HqfmGKvdD4eyoZFmiSxOECFd8v5MjSBeznfWpM0p1qZ3yXeHPzE8qqFzs4BbvDn4GUN5Cmnhz_CWxYvt");'></div>
+<div class="p-4">
+<p class="text-lg font-bold">Suburban Family Home</p>
+<p class="text-primary text-base font-medium leading-normal">$750,000</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">3 Beds, 2 Baths, 2,100 sqft</p>
+<a class="text-primary text-sm font-semibold mt-2 inline-block" href="#">View Details →</a>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-slate-900 rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="An elegant downtown penthouse with city views" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCoa7xYFn2O_ugmclSbv2T7_3seZlB7_XskcF0qYVhW-sjmtfDwh13TRjf83Ihu2FihlGl7B6Iai_9w1IXYLiceSOn5MubdEmgf1QREIpDaO_AIHCWA9CQPn84Lzj8EGEkcIRuvJBUA6-7YyVaRHRhBgw2FnUyK5Pq4_bCq8gPDh6PiLDBntnO82sEHCTnecDz-RZyOCLa8SJSfoZZkbi5K39fWyOoRfzZm9Ze3HXFozGRKBXheSbTV1hQrTz41GMv6qo1jkUdmpT_S");'></div>
+<div class="p-4">
+<p class="text-lg font-bold">Downtown Penthouse</p>
+<p class="text-primary text-base font-medium leading-normal">$2,500,000</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">2 Beds, 2 Baths, 1,800 sqft</p>
+<a class="text-primary text-sm font-semibold mt-2 inline-block" href="#">View Details →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- FeatureSection ("Why Choose Us?") -->
+<div class="flex flex-col gap-10 px-4 py-16">
+<div class="text-center">
+<h1 class="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Why Choose Us?</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl mx-auto mt-2">We provide a seamless and professional experience from start to finish.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 text-center items-center">
+<div class="text-primary bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined !text-4xl">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Expert Agents</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Our agents are local experts dedicated to finding your perfect match.</p>
+</div>
+</div>
+<div class="flex flex-col flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 text-center items-center">
+<div class="text-primary bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined !text-4xl">other_houses</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Wide Selection</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Browse a diverse portfolio of properties to suit any lifestyle.</p>
+</div>
+</div>
+<div class="flex flex-col flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 text-center items-center">
+<div class="text-primary bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined !text-4xl">verified</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Seamless Process</h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">We handle the details so you can focus on your new beginning.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonials Section -->
+<div class="bg-white dark:bg-slate-900 py-16 rounded-xl">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-8 text-slate-900 dark:text-white">What Our Clients Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-500">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-4">"PropertyCo made finding our dream home an absolute breeze. Their agents were knowledgeable and incredibly supportive throughout the entire process."</p>
+<p class="font-bold text-slate-800 dark:text-slate-200">— The Johnson Family</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-500">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-4">"Selling our house was surprisingly stress-free thanks to the professional team at PropertyCo. Highly recommended for their efficiency and expertise."</p>
+<p class="font-bold text-slate-800 dark:text-slate-200">— Michael B.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-6 rounded-lg shadow-sm">
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-500">
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-4">"As a first-time homebuyer, I was nervous, but their team guided me every step of the way. I couldn't be happier with my new apartment!"</p>
+<p class="font-bold text-slate-800 dark:text-slate-200">— Sarah L.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Call-to-Action (CTA) Section -->
+<div class="mt-16 bg-primary/90 text-white rounded-xl p-12 text-center">
+<h2 class="text-3xl font-bold mb-4">Ready to Sell Your Property?</h2>
+<p class="mb-8 max-w-2xl mx-auto">Let our expert team help you get the best value for your home. We handle everything from marketing to closing.</p>
+<button class="bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-slate-100 transition-colors">
+                        List Your Property With Us
+                    </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
+<div class="container mx-auto px-4 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="font-bold text-lg mb-2 text-slate-800 dark:text-slate-200">PropertyCo</h3>
+<p class="text-sm">Your trusted partner in finding the perfect home.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-3 text-slate-800 dark:text-slate-200">Quick Links</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary" href="#">Buy</a></li>
+<li><a class="hover:text-primary" href="#">Rent</a></li>
+<li><a class="hover:text-primary" href="#">Sell</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-3 text-slate-800 dark:text-slate-200">About</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary" href="#">About Us</a></li>
+<li><a class="hover:text-primary" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-3 text-slate-800 dark:text-slate-200">Contact</h4>
+<p class="text-sm">123 Real Estate Ave, Suite 100<br/>New York, NY 10001</p>
+<p class="text-sm mt-2">contact@propertyco.com</p>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm">
+<p>© 2024 PropertyCo. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
