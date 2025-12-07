@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C21 Select SaaS Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-700" x-data="{ page: 'home' }">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <div class="shrink-0 flex items-center cursor-pointer" @click="page = 'home'">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg mr-2">
+                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                        </div>
+                        <span class="font-heading text-xl font-bold text-gray-900">C21 Select</span>
+                    </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <button @click="page = 'home'" :class="page === 'home' ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500'" class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition focus:outline-none">Home</button>
+                        <button @click="page = 'search'" :class="page === 'search' ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500'" class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition focus:outline-none">Properties</button>
+                        <button @click="page = 'agents'" :class="page === 'agents' ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500'" class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition focus:outline-none">Agents</button>
+                        <button @click="page = 'offices'" :class="page === 'offices' ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500'" class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium leading-5 transition focus:outline-none">Offices</button>
+                    </div>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <button class="px-4 py-2 bg-blue-600 rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-700 transition">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT: HOME -->
+    <div x-show="page === 'home'" x-transition.opacity>
+        <!-- Hero -->
+        <div class="relative bg-gray-900 h-[600px]">
+            <div class="absolute inset-0">
+                <img class="w-full h-full object-cover opacity-50" src="https://images.unsplash.com/photo-1600596542815-27b88e542b95?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Modern Home">
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
+                <h1 class="text-4xl md:text-6xl font-heading font-bold text-white mb-6 drop-shadow-md">Find Your Place <br class="hidden md:block" /> To Call Home</h1>
+                <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">Browse hundreds of listings in Sacramento and surrounding areas.</p>
+                <div class="w-full max-w-4xl bg-white rounded-lg shadow-2xl p-4 flex flex-col md:flex-row gap-4">
+                    <input type="text" placeholder="City, Zip, Address..." class="flex-grow border border-gray-300 rounded-md h-12 px-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button @click="page = 'search'" class="w-full md:w-auto px-8 h-12 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md transition flex items-center justify-center gap-2">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- Featured -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 class="text-3xl font-heading font-bold text-gray-900 text-center mb-12">Featured Properties</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 group cursor-pointer" @click="page = 'detail'">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">New</div>
+                        <div class="absolute bottom-4 left-4 text-white drop-shadow-md"><p class="text-2xl font-bold">$1,250,000</p></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">7901 Stevenson Avenue</h3>
+                        <p class="text-gray-500 text-sm mb-4">Sacramento, CA 95828</p>
+                        <div class="flex items-center justify-between text-gray-600 text-sm border-t border-gray-100 pt-4">
+                            <span>4 Beds</span><span>3 Baths</span><span>2,400 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 group cursor-pointer" @click="page = 'detail'">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 left-4 text-white drop-shadow-md"><p class="text-2xl font-bold">$985,000</p></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">1243 Maple Drive</h3>
+                        <p class="text-gray-500 text-sm mb-4">Elk Grove, CA 95757</p>
+                        <div class="flex items-center justify-between text-gray-600 text-sm border-t border-gray-100 pt-4">
+                            <span>3 Beds</span><span>2 Baths</span><span>1,850 sqft</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 group cursor-pointer" @click="page = 'detail'">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-4 left-4 text-white drop-shadow-md"><p class="text-2xl font-bold">$2,100,000</p></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">45 Oceanview Drive</h3>
+                        <p class="text-gray-500 text-sm mb-4">Granite Bay, CA 95746</p>
+                        <div class="flex items-center justify-between text-gray-600 text-sm border-t border-gray-100 pt-4">
+                            <span>5 Beds</span><span>4.5 Baths</span><span>4,200 sqft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT: SEARCH -->
+    <div x-show="page === 'search'" x-transition.opacity class="bg-gray-50 min-h-screen py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar -->
+            <div class="w-full lg:w-1/4">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 sticky top-24">
+                    <h3 class="font-bold text-gray-900 mb-4 text-lg">Filters</h3>
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Location" class="w-full rounded border-gray-300 px-3 py-2 border">
+                        <div class="flex gap-2">
+                            <input type="number" placeholder="Min Price" class="w-1/2 rounded border-gray-300 px-3 py-2 border">
+                            <input type="number" placeholder="Max Price" class="w-1/2 rounded border-gray-300 px-3 py-2 border">
+                        </div>
+                        <button class="w-full py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 transition">Update</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid -->
+            <div class="w-full lg:w-3/4">
+                <h1 class="text-2xl font-bold text-gray-900 mb-6">Properties Found</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <!-- Loop Sim -->
+                    <template x-for="i in 4">
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition overflow-hidden cursor-pointer" @click="page = 'detail'">
+                            <div class="relative h-56">
+                                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+                                <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded text-xs font-bold shadow-sm">MLS# 12345</div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h2 class="text-2xl font-bold text-gray-900">$850,000</h2>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">Active</span>
+                                </div>
+                                <p class="font-medium text-gray-800">123 Pine Valley Road</p>
+                                <p class="text-gray-500 text-sm mb-4">Roseville, CA 95661</p>
+                                <div class="flex gap-4 text-sm text-gray-600 border-t pt-4">
+                                    <span><b>3</b> Bed</span><span class="border-l pl-4"><b>2</b> Bath</span><span class="border-l pl-4"><b>1,890</b> SqFt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT: DETAIL -->
+    <div x-show="page === 'detail'" x-transition.opacity>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <button @click="page = 'search'" class="mb-4 text-blue-600 hover:underline">&larr; Back to Search</button>
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-2 h-[400px] md:h-[500px]">
+                <div class="col-span-2 row-span-2"><img src="https://images.unsplash.com/photo-1600596542815-27b88e542b95?auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover rounded-l-xl"></div>
+                <div class="col-span-1 row-span-1"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover"></div>
+                <div class="col-span-1 row-span-1"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover rounded-tr-xl"></div>
+                <div class="col-span-1 row-span-1"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover"></div>
+                <div class="col-span-1 row-span-1 relative"><img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover rounded-br-xl"><button class="absolute bottom-2 right-2 bg-white px-3 py-1 text-sm font-bold rounded shadow">+12 Photos</button></div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-12">
+            <div class="w-full lg:w-2/3">
+                <div class="flex justify-between items-start mb-6">
+                    <div><h1 class="text-3xl font-heading font-bold text-gray-900">123 Pine Valley Road</h1><p class="text-lg text-gray-500">Roseville, CA 95661</p></div>
+                    <div class="text-right"><p class="text-3xl font-bold text-blue-600">$850,000</p></div>
+                </div>
+                <div class="flex gap-8 border-y border-gray-100 py-6 text-center">
+                    <div><span class="block text-2xl font-bold">3</span><span class="text-sm text-gray-500">Beds</span></div>
+                    <div class="border-l pl-8"><span class="block text-2xl font-bold">2.5</span><span class="text-sm text-gray-500">Baths</span></div>
+                    <div class="border-l pl-8"><span class="block text-2xl font-bold">1,890</span><span class="text-sm text-gray-500">SqFt</span></div>
+                </div>
+                <div class="mt-8 prose text-gray-600"><p>Welcome to this stunning modern home located in the heart of Roseville. Featuring an open floor plan, chef's kitchen with quartz countertops, and a spacious backyard perfect for entertaining.</p></div>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 sticky top-24">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-blue-500">
+                        <div><h4 class="font-bold text-gray-900">John Agent</h4><p class="text-sm text-blue-600">Premier Agent</p></div>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white font-bold py-3 rounded-md hover:bg-blue-700 transition">Schedule Viewing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT: AGENTS -->
+    <div x-show="page === 'agents'" x-transition.opacity class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-heading font-bold text-gray-900 text-center mb-12">Meet Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <template x-for="i in 8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="font-bold text-lg">John Doe</h3>
+                    <p class="text-blue-600 text-sm mb-4">Realtor Associate</p>
+                    <button class="text-sm border border-blue-600 text-blue-600 px-4 py-1 rounded hover:bg-blue-50">Contact</button>
+                </div>
+            </template>
+        </div>
+    </div>
+    
+    <!-- CONTENT: OFFICES -->
+     <div x-show="page === 'offices'" x-transition.opacity class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="text-3xl font-heading font-bold text-gray-900 text-center mb-12">Our Offices</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+             <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">Map Placeholder</div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg mb-2">Sacramento HQ</h3>
+                    <p class="text-gray-600">123 Capitol Mall<br>Sacramento, CA 95814</p>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-auto py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-xs">
+            &copy; 2025 C21 Select Group. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
