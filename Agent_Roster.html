@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agents Directory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex w-full items-center justify-center border-b border-solid border-gray-200/80 dark:border-gray-700/80 bg-white dark:bg-gray-900/50 backdrop-blur-sm sticky top-0 z-50">
+<div class="flex items-center justify-between whitespace-nowrap px-10 py-3 w-full max-w-7xl">
+<div class="flex items-center gap-4 text-slate-800 dark:text-slate-200">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-800 dark:text-slate-200 text-lg font-bold leading-tight tracking-[-0.015em]">Property Business</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Properties</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Login</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJXkjWn28mw8ZguHfZ_WWReP0ZXIExrCkNAV4hmnc_LujE7I2R3ZBy_0DrQD66lukD-83_EhycQ5i_4nsYe76t2-YoLOA4kksV5cDLk9q3HNWctI6jCt57X7sFpenLXuVDsaW42I34gKxeLNnQfbhsVatrn2H0gi1KcmhbTKoF22T3gmnn1B06PyjnjMAy_L_WdZA1xlA_SyU8DmiUeHHKTONMYL8T_0KTS_vgrJIE8Bz9iJ981bU_kYtva0slYWZ1MgC0AFDG6fk-");'></div>
+</div>
+</div>
+</header>
+<main class="px-4 py-10 sm:px-6 lg:px-8 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-7xl">
+<div class="flex flex-wrap justify-between gap-4 items-center mb-8 px-4">
+<div class="flex min-w-72 flex-col gap-2">
+<p class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Meet Our Expert Agents</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Find the perfect professional to guide you through your property journey.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-4 px-4 py-3 mb-6 items-center">
+<div class="flex-grow w-full">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 dark:text-slate-400 flex border-none bg-white dark:bg-background-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-800 dark:text-slate-200 focus:outline-0 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark border-none bg-white dark:bg-background-dark h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search by name or specialty..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-3 flex-wrap">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark px-4">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">Location</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-background-dark px-4">
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium leading-normal">Specialty</p>
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white/0 dark:bg-background-dark/0 px-4 text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors">
+<p class="text-sm font-medium leading-normal">Reset</p>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyLs4EzCpG8mT6DTlese9js1wQZ2PdxWSfXdpU5PsIBEgGKoHN2w7O9CSNjShns6d7gq2bpFNWiSnEia8Vwi4C4PUr-JYfmcDV1pjlvuOBn8DQnwKRVzodVylpS5D3boyDnccTL4jNlLQ4EE7Oa6HWayME6zggdJmlnPml_DAu7dXptV1qPiUWLH-DQRv_JZOKZKPFe3MX6e06UTGx3EVMylOcFPZSGFqG4iNOqwOrtEHnu0FPbJMY6QIrD9IZAz9FQRazMNu1ZFeE");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">Jane Doe</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Lead Agent, Residential Sales</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Luxury Homes</span>
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">First-Time Buyers</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent John Smith" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOU0F5QP9fF4UUabcsAx6BqUpWRvrbiTPOBv9fEdcaPFsiQIydJskyN8zkIeQDayZwXGagEtrWKQjGyYMpkK8mAlQJY1u6zA_DTA3KOn-GLsprQi7dqHP5uhTQ1eJxz3sv13k4CoNDwWyqwGtMJCuYn6Qes7Sx0POWkMiwqEQiqQ3JzURhblMFGV7LpRZDQ6W0WY6oOtLxBm1kbbWohjn0tbH61tPTGOhGntJy5UCNKP5ohFOUOziIQz3cvPGz-nwEo_t-tKwxYK-L");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">John Smith</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Senior Agent, Commercial</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Commercial</span>
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Rentals</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent Emily White" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpQNmN18GBxnp0vKdz21F_LwfgZj_Fi-LwaVPmr_6n7E2omLq773eGyRzH_BELoZ2e9pQ8Hmt3wY5_MkaKOjERUWtwA4tFuq52CbFxjc_4MpWdVC-M4x4_MO4ltPoNHq0k6c1eCO7RCZfc-ROySC3Hp3oOFVvI7mjU-rbZVqDvD5mY_1-CiowA7g_hNJ29Fa2KBW9X64XhbQ9dh400zo8sUCWJMOrss2UlziZZk_gy34SlHStladBd92XW1h2U-d9_Yby3R3OMJ3-g");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">Emily White</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Agent, Rentals</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Rentals</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent Michael Brown" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWXZsHuf8IPKEkyMFTNMllpsPeaEQkIXkCz7PHAIOwborRmJNKZahXO6dIOSGdGkDU-qrj2UI_uSlCMmFwE0_E3sjfpMNP-YCm_bYW39TtwsBxshkn0j_ud5O1S3glDCAhBop--3q5Rn4dx0bZvC7L-7yFyeKknTp3iOKtA05tV0LhaptVljfqY9O1Hx7zBffBMMP4MQCTDcZMI6vCLXcHeWHkfRGN-tLYadnagKppWMZfDjyBYHq3AuNTNVjT5t3A9Vz9MdYbEA4s");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">Michael Brown</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Luxury Properties Specialist</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Luxury Homes</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent Sarah Green" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAM85xJngENSuavOFGJb1ty0PMiHj8uxFl0zOGO4mU0gjLvXIZNalWEb3wqjXeWW1uN_VErZz-KElhhyMmHJFkxJpw6SuKiloSbhkOLNbIEUnloS9exoC5qFw5obIuS85Qw6pbrLNhbxiVlOOHmz6igcGe9iZ9Z3FdHv-JbgMO8HijQFeMPR7-0_Pqyk2oVN5xrjIXlrUhe2l09wVdTDse1GaBwpH-Gy6WwSGARSKkCkfmmhMw_Nkut2DYakkgkC2yb38fA2hZlBByW");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">Sarah Green</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Land Sales Consultant</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Land</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 text-center p-6 bg-white dark:bg-background-dark rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="mx-auto"><div class="w-28 h-28 bg-center bg-no-repeat aspect-square bg-cover rounded-full" data-alt="Headshot of agent David Black" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBko4LPqj1SFCkoykIdO-d4MqTaAvlfjgp3Oa4thmaiNG-myt1SnIEyHwli4yk3gku34xTczvclS0p2rDIxxJ6GlQjFssAduR2gjrArxfLNcfmDdkGiAIAtTu1V5K3oWIXiEZP2LsKUIiOQZWU_ZXvG3U-Y7LKsLoesuVr6EQP7Dc5W9sX81JLtvX2GRcYrBpI6NIUv3-sNc9h-Zfmntd05UcHBgFkQb_yBgw2ciM7bxYzFGDhwQGQLX1P4wxyqXBtoQxHlTJ19AupL");'></div></div>
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-normal">David Black</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">New Agent, Residential</p>
+</div>
+<div class="flex justify-center gap-2 flex-wrap">
+<span class="text-xs font-medium bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-300 py-1 px-2.5 rounded-full">Residential</span>
+</div>
+<div class="flex justify-center gap-4 text-slate-500 dark:text-slate-400 pt-2">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">call</span></a>
+</div>
+<button class="mt-2 w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 mt-8">
+<nav class="flex items-center gap-2">
+<button class="flex items-center justify-center size-10 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-lg text-white bg-primary">1</button>
+<button class="flex items-center justify-center size-10 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">2</button>
+<button class="flex items-center justify-center size-10 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">3</button>
+<button class="flex items-center justify-center size-10 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

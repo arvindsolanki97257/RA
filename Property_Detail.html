@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Property Detail Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1392ec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101a22",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark/50 backdrop-blur-sm sticky top-0 z-50 px-4 sm:px-8 lg:px-16 xl:px-20">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Properly</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Listings</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Agents</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-8 lg:px-16 xl:px-20 py-10">
+<div class="mx-auto max-w-7xl">
+<div class="flex flex-wrap gap-2 pb-6">
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal">/</span>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal hover:text-primary" href="#">Listings</a>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-medium leading-normal">/</span>
+<span class="text-slate-900 dark:text-white text-sm font-medium leading-normal">123 Maple St, Springfield</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12">
+<div class="lg:col-span-2">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-80 md:min-h-[500px]" data-alt="Modern house exterior with a large front lawn and clean architectural lines." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGLHehjZLOCw8XlHNovRVhT1Okal93AaZ7tDW1fYxaXwaUiE78dwgZ3ETFf8OS30NPwXszq2XJSaYMmf3iScuB5PYt5h9N826zPL1Zj3YqKfQj98LIvlfRfo5DhBMq2iTy-Fe03Im30FLQF9k-VLptl5DD1zqwYzSaaNVG2pGFq-78cNJGz7ON1pnDiMHizAFU8NxH4UIpJx_5vE0SYYpVIKC2hvRwhxu_agc-lOHQTo4tjiM9Moof0-K2Z32-TOXHucNaHN8Uwl_2");'></div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-3 pt-3">
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg cursor-pointer ring-2 ring-primary" data-alt="Bright and airy living room with high ceilings and large windows." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjW37fsifshILEyc3LU3gvwmWVW3VnJU4o7gl91bv0IfqdAeT-SzouhQrlG_ZoxWs1osgmL1lnWGYWhtz6QLYkyglNySBSSnwWTijE4PCqZrXFZTka9M6T1K4HVIpIPgiSdxi1DVmAoSwrYMqANwQVBNOH7DRMUoctZrofXZFbIsgVoPcNVchEGdiQQgjbmLgG2a7Hh3BAoQY2SxV9zPYTNfoGJeRUgmJ2FJFCgZDain0Lo7o7ZHv8L3hZxzOGRvH35fDl45NtUFE0");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary transition-all" data-alt="Gourmet kitchen with stainless steel appliances and a marble island." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC71xfH9h_Ns4L7g7TZMtrROcs619nH8MQyPI4gqyw6PUE3x4ZqVCfVzgrCdEz3llReVV9SIlR7Vu2MH0zXJScp4-efwjeGaTIxOxDhnIK32PtUPa92d0dcms0OFpS_7wwcNDKbOCTQX-CIWniZdxFtyjfO9EO9TayWCtuvp7W3OsIWMKtBgr6hX0H5hjkDieHFFQCTGlaE2__j105BaHLe1urBQK9ax9iay95pyUgYOwuzmwXjkWhNBE8j63YqOwfORL3-zQWYHV1P");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary transition-all" data-alt="Spacious master bedroom with a king-sized bed and hardwood floors." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPHiOvbSK8PLgK_Km3ugR2G-myBf9ry7-yYUcV6AyMsZbmhNzdcwMLn6Cur2rqBT4a63QlU6e0-skKpqHj1-0QYDXqa-4iKVPBA3SGn-MW81DmDOT5yvOEm1JWL_RD5-dHRsvXcbYIFRBppwJe9y1chpfpMt9MtjDkycrmycQNiMGnRC5vA8Hor07lgCBNfG8-ir5v45u4MvY2WGExrF-FQpGJlYDpvbWVlCGVHM3uHYKchkkGlUJ0i0TgbTNo9ipVqGU2wc-De0pG");'></div>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary transition-all" data-alt="Modern bathroom with a glass shower and double vanity." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGL_fohRtcixszpW68DGUDYrkqm2tCxEPjk1mNhsoauatJJfwRNisBW0aBW7Q0cIRJ523Gxg3ZeLfbXEMPzF0gbn0NQoVWOsZblR030w728WWnxTwcfdhxpyrcDIxkUNriT5g4b7p5hGLlwQjVdBpDiWU32sCLU5ESe2uFzZg97uTHOxob-XqagRnVTgMMDmk0dq2uUko9MV0X8MDygZcrNRKNL7m5y9Otl41c_4457zE2Uq5ZvPf0KUr-OhHe1tJY3URbHFbGCzJs");'></div>
+</div>
+<div class="hidden sm:flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary transition-all relative" data-alt="Backyard patio with outdoor seating and a fire pit.">
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg">
+<span class="text-white font-bold text-lg">+5 more</span>
+</div>
+<div class="w-full h-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEUUJeKOdPZ4mPT6CfC6-8P4TYybl1DtAAevFpeUUj3fBExM1UanSd7mNkvkE9Uz9t6Qj5ANzr5QMMCwy5Tp8k3GHzTIx7QSltf0n6eCpD2-X2nen2NwDJ7GlCIQe1Ky5JjA1O4kEVtn_ayaZhx0rgKiWNaDu7_3qvq-AofcNhM6CdAS4LOvuStRzk3LGZGRbqr1ce1hX-I_wZ9t2R4lv0kbhYmyVVd60kY0Ocb3atNc6FwLg_-5wQgGEvVE2SWpyw2KA-Edds4K47");'></div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-1 flex flex-col gap-8">
+<div class="bg-white dark:bg-background-dark/80 p-6 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex flex-wrap justify-between items-start gap-3 pb-4">
+<div class="flex min-w-72 flex-col gap-1">
+<p class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.033em]">123 Maple St, Springfield, IL</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">A beautiful modern home with stunning views.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 pb-6 border-b border-slate-200 dark:border-slate-800">
+<span class="text-primary text-3xl font-black">$750,000</span>
+<span class="px-3 py-1 text-xs font-bold leading-none text-amber-800 bg-amber-400/30 rounded-full">For Sale</span>
+</div>
+<div class="grid grid-cols-3 gap-4 text-center py-6">
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="bed">bed</span>
+<span class="text-slate-900 dark:text-white font-bold">4</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">Beds</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="shower">shower</span>
+<span class="text-slate-900 dark:text-white font-bold">3</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">Baths</span>
+</div>
+<div class="flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="square_foot">square_foot</span>
+<span class="text-slate-900 dark:text-white font-bold">2,400</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm">Sq. Ft.</span>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Description</h3>
+<p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                            Discover luxury living in this beautifully designed modern home. Featuring an open-concept floor plan, gourmet kitchen with high-end appliances, and a spacious master suite, this property offers both comfort and style. Enjoy breathtaking views from the private balcony and entertain guests in the professionally landscaped backyard.
+                        </p>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white pt-2">Features</h3>
+<ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-600 dark:text-slate-300">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> Hardwood Floors</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> Private Balcony</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> Updated Kitchen</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> 2-Car Garage</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> Smart Home System</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary/80 text-base" data-icon="check">check</span> Fireplace</li>
+</ul>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/80 p-6 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white pb-4">Request Information</h3>
+<form class="space-y-4">
+<div>
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300 sr-only" for="name">Name</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-primary focus:ring-opacity-50 text-sm" id="name" name="name" placeholder="Full Name" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300 sr-only" for="email">Email</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-primary focus:ring-opacity-50 text-sm" id="email" name="email" placeholder="Email Address" type="email"/>
+</div>
+<div>
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300 sr-only" for="phone">Phone</label>
+<input class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-primary focus:ring-opacity-50 text-sm" id="phone" name="phone" placeholder="Phone Number" type="tel"/>
+</div>
+<div>
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300 sr-only" for="message">Message</label>
+<textarea class="w-full rounded-lg border-slate-300 dark:border-slate-700 dark:bg-slate-800 dark:text-white focus:border-primary focus:ring-primary focus:ring-opacity-50 text-sm" id="message" name="message" placeholder="I'd like to schedule a viewing..." rows="4"></textarea>
+</div>
+<button class="w-full flex items-center justify-center rounded-lg h-11 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" type="submit">
+<span class="truncate">Schedule a Viewing</span>
+</button>
+</form>
+</div>
+<div class="bg-white dark:bg-background-dark/80 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
+<div class="w-full h-48 bg-cover bg-center" data-alt="Map showing the location of the property in a suburban neighborhood." data-location="Springfield, Illinois" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABwHCyLQBn77vAEeEHN4E7HF_OWudeyhgyPnbXqq6KtzSqXklRgBHjIpw6qHM7LelRD4y3SCShLfU328jzkJhWvvw_-ea7MhAdH9vOSSLwCxQUPrLc2X8IP4fLSJL4SOd3-dCvrWNXscfbV_DmGCWuItK6EOhYdMQ2z2TgnR5p4zvHruuyxx---7QuS-k7hA19oK8UsiKhf_2cjXa5QAvZMS3k_SuJCY2d6ix6DtzG2fuJhhWxQ0h1so0kWrwcle_OTJtqmDH1BLdq');"></div>
+<div class="p-4">
+<h4 class="font-bold text-slate-900 dark:text-white">Location</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">123 Maple St, Springfield, IL 62704</p>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/80 p-4 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-16" data-alt="Portrait of Jane Doe, a friendly real estate agent." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ9JgcT7D-dVX8vAiWC4oY1NNiNoLtU2Ht7vGtMMAm9pBRC8tM3W0NmCH0G6V-VTqDXZFvSBeBJW6DXs9-RIY-132v76_ycWdoR26h1H8S2z_OBjdRCxOTVkW3cnHQ4VyJtphw3jCXJ1Qag3NSpgbcYKI0crnd_XgKEcvE7zF7EM7H1yb6tIbDEjX7gy_-FQTuftv4xejHN-DJSb3QwYOFK2324Fr3xNyM0RtQiUwtnvwa-qzYeML56kiTUnDVp_grNiMr1s36zgDW");'></div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Jane Doe</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Listing Agent</p>
+<a class="text-sm text-primary font-medium hover:underline" href="tel:123-456-7890">123-456-7890</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-white dark:bg-background-dark/80 border-t border-slate-200 dark:border-slate-800 mt-12">
+<div class="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16 xl:px-20 py-12">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="col-span-full lg:col-span-1">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold">Properly</h2>
+</div>
+<p class="mt-4 text-sm text-slate-500 dark:text-slate-400">Your partner in finding the perfect property.</p>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Company</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">About</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Careers</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Press</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Resources</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Blog</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Guides</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Legal</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Terms</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Privacy</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Licenses</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white">Connect</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Facebook</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Twitter</a></li>
+<li><a class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary" href="#">Instagram</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8">
+<p class="text-sm text-slate-500 dark:text-slate-400 text-center">© 2024 Properly. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
